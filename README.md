@@ -77,7 +77,7 @@ Dataset I is permanently sealed and is not part of this bundle.
 ## 3. Repository layout
 
 ```
-paper-verification-code/
+robust-lidar-registration/
 ├── structured_mismatch_phase0/      # Phase-0 core + audits (trajectory VI)
 │   ├── scripts/
 │   │   ├── s0_common.py             # IO, rotations, PCA normals, FPFH/RANSAC/vanilla ICP
