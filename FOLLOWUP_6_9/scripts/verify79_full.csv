@@ -1,0 +1,6 @@
+trajectory,n_frames,maxdiff_Raw,maxdiff_Patch,maxdiff_Full,maxdiff_Huber,maxdiff_Trim,maxdiff_nearest_d,maxdiff_pred_t_mm
+VI,3507,0.0,0.0,0.0,0.0,0.0,0.0,
+IV,1092,0.0,0.0,0.0,0.0,0.0,0.0,3.552713678800501e-15
+II,2996,0.0,0.0,0.0,0.0,0.0,0.0,2.842170943040401e-14
+III,2597,0.0,0.0,0.0,0.0,0.0,0.0,
+V,13076,0.0,0.0,0.0,0.0,0.0,0.0,7.105427357601002e-15

@@ -1,0 +1,5 @@
+case,pair_id,geometry,family_A,dtype_A,mag_A,et_A_pub,et_A_raw,et_A_diff,family_B,dtype_B,mag_B,et_B_pub,et_B_raw,et_B_diff,rms_A_pub,rms_B_pub,rms_rel_gap_pct,rms_within_5pct,ratio_pub,ratio_raw,ratio_ok,et_ok,case_pass
+1,GA · D1/D3,GA,D1 coherent displacement,D1_appendage_disp,10.0,8.93,8.9285,0.0015,D3 local mismatch,D3_local_surface_off,50.0,0.9,0.9013,0.0013,7.95,7.7,3.145,True,9.9,9.91,True,True,True
+2,GB · D4/D3,GB,D4 span growth,D4_appendage_scale,0.025,0.058,0.0584,0.0004,D3 local mismatch,D3_local_surface_off,10.0,0.621,0.6206,0.0004,4.06,3.97,2.217,True,10.6,10.63,True,True,True
+3,GB · D4/D5,GB,D4 span growth,D4_appendage_scale,0.05,0.184,0.1839,0.0001,D5 coherent tilt,D5_appendage_tilt,0.5,1.528,1.5282,0.0002,5.33,5.08,4.69,True,8.3,8.31,True,True,True
+4,GC · D3/D4,GC,D3 local mismatch,D3_local_surface_off,2.0,0.988,0.9885,0.0005,D4 span growth,D4_appendage_scale,0.1,0.116,0.1161,0.0001,3.75,3.8,1.316,True,8.5,8.51,True,True,True

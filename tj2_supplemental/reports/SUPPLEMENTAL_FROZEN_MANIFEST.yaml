@@ -1,0 +1,166 @@
+# SUPPLEMENTAL_FROZEN_MANIFEST.yaml
+# TJ2 - SUPPLEMENTAL EXTERNAL CONFIRMATORY REPLICATION (prospectively frozen)
+# Written 2026-09-09 (Asia/Shanghai; UTC 2026-09-09T12:09Z) AFTER metadata screen + selection,
+# BEFORE any Dataset II point-cloud (".3d") byte is downloaded. Nothing frozen here may be
+# changed after the Dataset II outcome is opened. Inherits ALL locks of
+# structured_mismatch_phase0/reports/FROZEN_REPLICATION_MANIFEST.yaml (no override).
+
+meta:
+  tj: TJ2
+  name: SUPPLEMENTAL_EXTERNAL_CONFIRMATORY_REPLICATION
+  inherited_status_on_entry: PARTIAL_EXTERNAL_REPLICATION   # MUST stay unless the single test PASSES
+  rng_seed: 42
+  rng_library: numpy.default_rng(42)
+  language_stack: {python: "3.14.7", numpy: "2.5.3", scipy: "1.18.1", pandas: "3.0.5"}
+  single_outcome_bearing_test: true      # exactly ONE trajectory (II) may be opened for outcome
+  never_test_even_on_failure: [Dataset_I, Dataset_III]
+  ordering: "metadata screen -> selection (SUPPLEMENTAL_SELECTION.md) -> THIS manifest -> download II .3d -> P1/P2 -> P3 -> gate"
+
+# ----------------------------------------------------------- prospective selection (already done)
+selection:
+  rule_1_primary: maximize_N_IN_SUPPORT
+  closeness_for_tiebreak: "next-best N >= 0.90 * best N (relative gap <=10%)"
+  rule_2_on_tie: prefer_more_independent_temporal_and_orientation_blocks_not_one_contiguous_segment
+  rule_3_still_tied: smallest_download_bytes
+  forbidden_selection_inputs: [predicted_cosine, residual_quality, expected_positive_ease, any_registration_outcome]
+  candidates:
+    Dataset_I:   {zip_bytes: 194066093, n_scans: 2483, N_IN_SUPPORT: 313, frac: 0.1261,
+                  n_temporal_blocks: 1, temporal_deciles_hit: 2, vi_orientation_blocks_hit: 2,
+                  in_support_range_m: [14.809, 14.891]}
+    Dataset_II:  {zip_bytes: 89932451,  n_scans: 1253, N_IN_SUPPORT: 428, frac: 0.3416,
+                  n_temporal_blocks: 3, temporal_deciles_hit: 5, vi_orientation_blocks_hit: 6,
+                  in_support_range_m: [8.545, 15.691]}
+    Dataset_III: {zip_bytes: 94194038,  n_scans: 1302, N_IN_SUPPORT: 371, frac: 0.2849,
+                  n_temporal_blocks: 1, temporal_deciles_hit: 4, vi_orientation_blocks_hit: 6,
+                  in_support_range_m: [8.250, 15.464]}
+  ratios_vs_best: {III_over_II: 0.867, I_over_II: 0.731}   # both < 0.90 -> rule 1 alone decisive
+  selected_trajectory: Dataset_II
+  selected_remote_zip: epos_dataset_ii.zip
+  selected_zip_bytes_expected: 89932451
+  selected_n_scans_expected: 1253
+  selected_planned_in_support_scans: 428
+  selected_in_support_temporal_blocks:
+    - {scan_range: [143, 197], n: 55,  range_m: [14.31, 15.69]}
+    - {scan_range: [238, 510], n: 273, range_m: [9.11, 13.47]}
+    - {scan_range: [602, 701], n: 100, range_m: [8.54, 9.12]}
+  selection_basis: >
+    Rule 1 selects II outright (428 > 371 > 313; ratios 0.867/0.731 < 0.90, not close).
+    Rules 2 and 3 independently also favor II (3 separated temporal blocks and 5/10 deciles
+    vs single contiguous segments for I/III; all 6 VI orientation blocks; smallest zip).
+    Screen implementation bitwise-reproduces TJ1 frozen support flags (IV IN=156, V IN=0).
+
+# ----------------------------------------------------------- frozen predictor + artifacts (hashes)
+frozen_predictor:
+  file: structured_mismatch_phase0/scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz
+  sha256: "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"   # re-verified this session
+  k_nearest_views: 16                 # k*=16, selected inside VI only
+  range_std_m: 2.064279860893169
+  tau_support: 0.4403305559611483     # LOCKED; 95th pct VI leave-block-out nearest-training distance
+  min_patch_support: 3
+  kernel: "adaptive Gaussian exp(-0.5(d/d_k)^2) over k nearest VI scans; global IDW fallback"
+  distance: "d^2 = (dr/range_std)^2 + view_angle^2 ; IN_SUPPORT iff min d <= tau_support"
+  alpha_VI_raw_p2p: 0.019993613253598837   # single through-origin VI-only magnitude scalar; NOT refit, NOT a gate
+  refit_allowed: false
+  tau_change_allowed: false
+
+frozen_artifacts_sha256:   # all re-verified this session
+  target_model_3d:       "4613f00b91bfedd22c4aab19f974e34fb8279b21634c433b04668e48de4402e4"
+  model_cache_npz:       "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"   # xyz + PCA normals k=16
+  patches_npz:           "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"   # 24 frozen patch labels
+  patch_matrix_npz:      "f5c55a63d5aadf52e04d095ae59fba2cc54b03556903bed30b0e187434c98285"
+  model_point_resid_npy: "3bd423758d1d81ceee1c292d41e19be9a60e37c8a081fc3f266364c019a348d0"
+  frozen_nuisance_ops_npz: "c3b874e025b19457183a7f2e56d9dcd1f1488f6a04c9b2cd672ddf356c303bad"
+frozen_scripts_sha256:
+  s0_common_py: "0acf82fa3cbefc5610f96e9904442f5d8c18b7bebb36f1aa3e59f11386a02c9e"
+  s1_residuals: "bf9cda260ca3c77517d1da493aa01f75e39e42954fccbfb742da257ea010c670"
+  s3_patches:   "69a52b4f8558b378d30aef78fb855af887ae89eafc0a939334930bbbc2fa2b15"
+  m_common_py:  "a0c7ad488a3164a921ab6a77b380a4e0cd768777425d16c82de28fc5e9f237b8"
+
+phase1_deliverables_sha256:
+  SUPPLEMENTAL_METADATA_SCREEN_csv: "057e196252c4c81f5647599e7606663653f9ca7db567ed9fb562d447dad1c4d9"
+  SUPPLEMENTAL_support_perscan_csv: "c68e5808da70d267bd64d43a1341b0c232d59fd4ae35fa625dd4686700386af3"
+  support_screen_summary_json: "ccc1eafea693d1b057120d042c19bf96f8833e4cb4ab135219461ee1acff8206"
+  cd_i_csv:   "e8eb1f1b4480615cdd7d84910e24ff59d5aed84e2ee144570ad47366b715732f"
+  cd_ii_csv:  "e3a6d80ca137154632086f32ff4c957e49596642e95c35ca10c0c6dfce96c99a"
+  cd_iii_csv: "61378721b094f2e6ad029740978eb4536adc059e096a346b5f52e962b5c7350a"
+  SUPPLEMENTAL_SELECTION_md: "9a891e7f2f8b6bee2ba098d9afa2c3342d47b63483ab1b94a70c76ef18ad46c4"
+
+# ----------------------------------------------------------- frozen geometry / objectives / nuisance
+data_convention:
+  lidar_3d: "ASCII 'x y z' metres, LIDAR frame"
+  pose: "line1 timestamp s; line2 pos target-in-lidar [m]; line3 quaternion [qs qx qy qz] scalar-first target->lidar"
+  gt_align: "P_target = R^T (P_lidar - t), R=quat_to_R(q)"
+  view: "sensor origin in target frame o=-R^T t ; range=||o|| ; u=o/||o||"
+patches: {n_patches: 24, re_cluster_on_II: false, label_policy: "frozen model-patch label of NN model point"}
+objectives:
+  J1_p2p: "mean_i || T p_i - m_nn(Tp_i) ||^2 ; NN recomputed every evaluation"
+  J2_p2l: "mean_i [ n_nn^T (T p_i - m_nn) ]^2 ; frozen PCA normals k=16"
+  forbidden: [robust_loss, trimmed_ICP, tukey, huber, outlier_rejection, new_ICP, NDT, neural, learned_correction]
+finite_difference: {translation_step_m: 0.005, rotation_step_deg: 0.25, hessian: symmetric_central_difference}
+local_basin: {translation_m: 0.30, rotation_deg: 15.0, start: AT_GT, clip_rule: basin_clipped_first_exit, on_bound_reported: true}
+nuisance:
+  primary_controls: [RAW, N1_range_offset, N2_shared_SE3, N3_isotropic_scale]
+  apply_frozen_values_only: true       # frozen_nuisance_ops.npz (br,s,Rse,tse); never refit on II
+  N1_range_offset_br_mm: 58.33183260641035
+  N2_shared_SE3: {t_mm: [45.66629212343002, -0.9635487866922601, -5.76328782085703], rot_deg: 2.413620127899284, scope: one_shared_never_per_scan}
+  N3_isotropic_scale: {s: 0.9655788069097739, scale_pct: -3.4421193090226065}
+  N4: OVER_PARAMETERIZED_STRESS_ONLY_NOT_PRIMARY
+
+# ----------------------------------------------------------- P1 / P2 / P3 (frozen, reuse TJ1 code path)
+protocols:
+  P1_GT_objective_stationarity:
+    measure: "||grad J(T_GT)|| real vs model-self numerical null (self = same # random MODEL points, seed42); Hotelling T2; gradient direction concentration"
+    report_conditions: [raw, N1, N2, N3]
+    report_objectives: [p2p, p2l]
+  P2_GT_started_local_optimum_displacement:
+    measure: "ICP p2p (Kabsch) / linearized p2l Gauss-Newton started AT GT, basin-clipped 0.30m/15deg; L-BFGS-B cross-check; report xi*, |dt|, |dr|, sign consistency, on-bound fraction"
+    report_conditions: [raw, N1, N2, N3]
+  P3_VI_only_frozen_direction:
+    inputs: "VI frozen template (Vmean/Vcnt) + II GT view geometry + nominal CAD ONLY; II current-frame residual FORBIDDEN"
+    predicted_cloud: "Qhat_i = m_nn(i) + mu_{j(i)}(z_II)"
+    predicted_step: "dxi_hat = -pinv(H_nom) ghat ; H_nom on nominal support cloud (no II residual); numpy pinv default rcond"
+    observed_step: "P2 raw xi* (GT-started local optimum)"
+    primary_endpoint: p2p_translation_direction_cosine
+    secondary_endpoint: p2l_translation_direction_cosine   # confirmatory only, cannot replace p2p
+    supporting: "-D1 template-direction cosine (not a gate)"
+    magnitude: NOT_A_GATE_THIS_ROUND
+
+# ----------------------------------------------------------- statistics (frozen) + larger-block sensitivity
+statistics:
+  block_bootstrap:
+    method: moving_block_bootstrap_of_scan_level_statistic   # identical to r10 mb_median
+    primary_block_length_L: 5            # VI-derived, used in TJ1 IV/V
+    B: 2000
+    seed: 42
+    statistic: median_cosine
+    ci: [2.5, 97.5]
+  larger_block_length_sensitivity: {also_report_L: [10, 20], purpose: "show primary verdict is stable at larger block lengths", required_report: true}
+  vector_pairing_permutation:
+    B: 2000
+    seed: 42
+    null: "shuffle observed-step vectors relative to predicted-step vectors across scans"
+    p_value: "(1 + #{null_median >= obs_median})/(B+1)"
+  analysis_set: IN_SUPPORT_only_for_primary_confirmatory   # 428 planned; OUT/all reported as appendix only
+  report_required: [N_IN_SUPPORT, support_temporal_blocks, block_length_sensitivity, per_block_results]
+
+# ----------------------------------------------------------- frozen success / failure gate (external gate, unchanged)
+gate:
+  applies_to: P3_p2p_IN_SUPPORT_raw
+  all_four_required:
+    median_cosine_min: 0.60
+    block_bootstrap_ci95_lower_gt: 0
+    frac_cosine_positive_min: 0.70
+    vector_pairing_permutation_p_max: 0.01
+  p2l: confirmatory_secondary_must_not_replace_p2p
+  magnitude_gate: none
+  alpha_refit: forbidden
+on_pass:
+  status: GO_TOP_JOURNAL_MECHANISM_CANDIDATE
+  evidence_chain: "VI internal non-circular PASS + IV confirmatory external PASS + one prospectively selected supplemental external (Dataset II) PASS + V supportive OUT-OF-SUPPORT extrapolation"
+  historical_record_unchanged: "original TJ1-E on Dataset V = NOT EVALUABLE because V had zero frozen-support samples (range 2.8-7.8 m non-overlapping VI 8.75-14.8 m)"
+on_fail:
+  status: PARTIAL_EXTERNAL_REPLICATION
+  action: "report failure as mechanism transfer boundary; DO NOT open/test Dataset I or III; no sequential fishing for a positive"
+on_insufficient_coverage:
+  trigger: "I/II/III all lack adequate frozen-support coverage (NOT the case: II n=428, 3 blocks, 6 orient blocks)"
+  action: "download no point clouds; stay PARTIAL_EXTERNAL_REPLICATION; proceed to paper writing; stop enlarging EPOS-Lid"

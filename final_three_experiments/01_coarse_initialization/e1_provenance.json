@@ -1,0 +1,207 @@
+{
+  "experiment": "E1_coarse_initialization",
+  "generator_script": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_provenance.py",
+  "exact_argv": [
+    "e1_provenance.py"
+  ],
+  "cwd": "D:\\doubao\\final_three_experiments\\01_coarse_initialization",
+  "start_utc": "2026-09-12T15:43:31.205989+00:00",
+  "seed": "deterministic (no RNG)",
+  "config": {
+    "levels_mm_deg": {
+      "L0": [
+        0.0,
+        0.0
+      ],
+      "L1": [
+        10.0,
+        0.5
+      ],
+      "L2": [
+        30.0,
+        1.0
+      ],
+      "L3": [
+        50.0,
+        2.0
+      ],
+      "L4": [
+        100.0,
+        5.0
+      ],
+      "L5": [
+        200.0,
+        10.0
+      ],
+      "L6": [
+        300.0,
+        15.0
+      ]
+    },
+    "reused_local_levels": [
+      "L0(ref)",
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "new_coarse_levels": [
+      "L4",
+      "L5",
+      "L6"
+    ],
+    "L7_excluded": "500mm start exceeds frozen 0.30m translation safeguard at x0 -> precondition fails",
+    "directions_per_level": [
+      "v1",
+      "v2",
+      "v3",
+      "v4"
+    ],
+    "n_directions": 4,
+    "perturbation_family": "identical t3_common DIRS + cyclic ROT_PAIR (max diff vs shipped L1-L3 = 0.0)",
+    "frames": "frozen 20/traj roster (initialization_frames.json); NOT re-selected",
+    "methods": [
+      "Raw",
+      "Huber",
+      "Patch",
+      "PatchHuber"
+    ],
+    "primary_comparison": [
+      "Raw",
+      "Patch"
+    ],
+    "capture_A": "final t < init t AND final r < init r (relative)",
+    "capture_B": "final t<=50mm AND final r<=2deg (recovery into tested local basin; experimental, not mission tol)",
+    "safeguard": "frozen basin clip 0.30m/15deg",
+    "solver": "frozen g_common.robust_icp via t3_common.inst_icp (unchanged)",
+    "seed": "no RNG in ICP/perturbation (deterministic sign-balanced); frozen plab from MiniBatchKMeans seed=42",
+    "workers": 20,
+    "blas_threads": 1,
+    "kdtree_query_threads": 1
+  },
+  "frozen_config": {
+    "patch_count": 24,
+    "normal_feature_weight": 0.3,
+    "kmeans_seed": 42,
+    "kmeans_n_init": 20,
+    "kmeans_batch_size": 4096,
+    "max_iter": 40,
+    "basin_t_m": 0.3,
+    "basin_r_deg": 15.0,
+    "tol_p2p": 1e-08,
+    "huber_delta": 1.345,
+    "kstar": 16,
+    "predictor_sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  },
+  "machine": {
+    "python": "3.14.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "pandas": "3.0.5",
+    "psutil": "7.2.2",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "os_arch": "AMD64",
+    "cpu_processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "cpu_logical": 24,
+    "cpu_physical": 24,
+    "ram_total_gb": 33.951,
+    "env_threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "QTHREADS": "2"
+    }
+  },
+  "note": "L0-L3 reused byte-for-byte from final_targeted; fidelity gate reproduces them to 5.7e-14 mm with 0 categorical mismatches.",
+  "inputs": {
+    "predictor_frozen": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\rescue\\VI_ONLY_PREDICTOR_FROZEN.npz",
+      "exists": true,
+      "size_b": 288502,
+      "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+    },
+    "model_cache": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\model_cache.npz",
+      "exists": true,
+      "size_b": 1373771,
+      "sha256": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+    },
+    "patches": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\patches.npz",
+      "exists": true,
+      "size_b": 26129,
+      "sha256": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+    },
+    "roster": {
+      "path": "D:\\doubao\\revision_experiments\\final_targeted\\initialization_frames.json",
+      "exists": true,
+      "size_b": 5724,
+      "sha256": "e8ed60d4cd42b7cf0e3d914fdc2242f8fd17d0b16414fcab948b1a0d3482b77e"
+    },
+    "reused_L0L3_framewise": {
+      "path": "D:\\doubao\\revision_experiments\\final_targeted\\initialization_sensitivity_framewise.csv",
+      "exists": true,
+      "size_b": 745330,
+      "sha256": "4d2d16570a4503727be0681f1335a4767b6d5b0b13356c6d5f0b65c6dc37add4"
+    }
+  },
+  "outputs": {
+    "E1_COARSE_INIT_REPORT.md": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\E1_COARSE_INIT_REPORT.md",
+      "size_b": 7798,
+      "sha256": "6031e541dd94fb00236743b0868d617db8592ccdae14a7d8cd378e03b9450f37"
+    },
+    "e1_coarse_L4L6_framewise.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_coarse_L4L6_framewise.csv",
+      "size_b": 690433,
+      "sha256": "bbda51e043d7ffc4bea5ed81a61e6a25df5d4727b200fb57b34e06575dea5f13"
+    },
+    "e1_coarse_init_framewise.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_coarse_init_framewise.csv",
+      "size_b": 1539170,
+      "sha256": "2d3340aacc8cb03a1a7dfda59d5272aadab6be702973fcee35e592f7030426c7"
+    },
+    "e1_coarse_init_summary.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_coarse_init_summary.csv",
+      "size_b": 23346,
+      "sha256": "d3b275db95adb1d0d194472bd8b7a6287969b6cf954352e6ab0c08f5f75dec0f"
+    },
+    "e1_fidelity_gate.json": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_fidelity_gate.json",
+      "size_b": 429,
+      "sha256": "b20e3816bae47d75e28a448cf00f97866f7b4ddde1566ce8f6e54ab259724476"
+    },
+    "e1_fidelity_gate.txt": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_fidelity_gate.txt",
+      "size_b": 263,
+      "sha256": "7164a51204ba64d48f0f1e012e694ba84e043565f0fcdccde2d89f2139a115c6"
+    },
+    "e1_key_numbers.json": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\e1_key_numbers.json",
+      "size_b": 6803,
+      "sha256": "bdc07fd474971649be720531afc7cd974300715456e6ac88c24fe1fe162cdb95"
+    },
+    "fig_e1_boundary_fail.png": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\fig_e1_boundary_fail.png",
+      "size_b": 128861,
+      "sha256": "0c39065051b4f8b16a46d67a1737a7ce41579828c5bc17f70e31997beaff653e"
+    },
+    "fig_e1_captureB.png": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\fig_e1_captureB.png",
+      "size_b": 133274,
+      "sha256": "edb945985ecc0640fb079a9bbeacce0ec1be1890482b89fe9433fba187f08f7f"
+    },
+    "fig_e1_median_et.png": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\fig_e1_median_et.png",
+      "size_b": 205430,
+      "sha256": "c824ecda01e36fb6bc2946ad68ccbc74a31b87ddbece83149f5fc27ac652a2e6"
+    },
+    "fig_e1_paper_composite.png": {
+      "path": "D:\\doubao\\final_three_experiments\\01_coarse_initialization\\fig_e1_paper_composite.png",
+      "size_b": 180921,
+      "sha256": "8ace4ed3385b3643c8e926c7c3b3592b0f502bb4cdec6596ed0511a4c4caf089"
+    }
+  },
+  "end_utc": "2026-09-12T15:43:31.519043+00:00"
+}

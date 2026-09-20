@@ -1,0 +1,116 @@
+﻿PASS - E1 input hash predictor_frozen
+PASS - E1 input hash model_cache
+PASS - E1 input hash patches
+PASS - E1 input hash roster
+PASS - E1 input hash reused_L0L3_framewise
+PASS - E1 output exists E1_COARSE_INIT_REPORT.md
+PASS - E1 output hash E1_COARSE_INIT_REPORT.md
+PASS - E1 output size E1_COARSE_INIT_REPORT.md
+PASS - E1 output exists e1_coarse_L4L6_framewise.csv
+PASS - E1 output hash e1_coarse_L4L6_framewise.csv
+PASS - E1 output size e1_coarse_L4L6_framewise.csv
+PASS - E1 output exists e1_coarse_init_framewise.csv
+PASS - E1 output hash e1_coarse_init_framewise.csv
+PASS - E1 output size e1_coarse_init_framewise.csv
+PASS - E1 output exists e1_coarse_init_summary.csv
+PASS - E1 output hash e1_coarse_init_summary.csv
+PASS - E1 output size e1_coarse_init_summary.csv
+PASS - E1 output exists e1_fidelity_gate.json
+PASS - E1 output hash e1_fidelity_gate.json
+PASS - E1 output size e1_fidelity_gate.json
+PASS - E1 output exists e1_fidelity_gate.txt
+PASS - E1 output hash e1_fidelity_gate.txt
+PASS - E1 output size e1_fidelity_gate.txt
+PASS - E1 output exists e1_key_numbers.json
+PASS - E1 output hash e1_key_numbers.json
+PASS - E1 output size e1_key_numbers.json
+PASS - E1 output exists fig_e1_boundary_fail.png
+PASS - E1 output hash fig_e1_boundary_fail.png
+PASS - E1 output size fig_e1_boundary_fail.png
+PASS - E1 output exists fig_e1_captureB.png
+PASS - E1 output hash fig_e1_captureB.png
+PASS - E1 output size fig_e1_captureB.png
+PASS - E1 output exists fig_e1_median_et.png
+PASS - E1 output hash fig_e1_median_et.png
+PASS - E1 output size fig_e1_median_et.png
+PASS - E1 output exists fig_e1_paper_composite.png
+PASS - E1 output hash fig_e1_paper_composite.png
+PASS - E1 output size fig_e1_paper_composite.png
+PASS - E2 input hash predictor_frozen
+PASS - E2 input hash model_cache
+PASS - E2 input hash patches
+PASS - E2 input hash g1_vi_fidelity
+PASS - E2 output exists e2_lobo_fold_provenance.json
+PASS - E2 output hash e2_lobo_fold_provenance.json
+PASS - E2 output size e2_lobo_fold_provenance.json
+PASS - E2 output exists e2_vi_lobo_fold_table.csv
+PASS - E2 output hash e2_vi_lobo_fold_table.csv
+PASS - E2 output size e2_vi_lobo_fold_table.csv
+PASS - E2 output exists e2_vi_lobo_framewise.csv
+PASS - E2 output hash e2_vi_lobo_framewise.csv
+PASS - E2 output size e2_vi_lobo_framewise.csv
+PASS - E2 output exists e2_vi_lobo_oof_framewise.csv
+PASS - E2 output hash e2_vi_lobo_oof_framewise.csv
+PASS - E2 output size e2_vi_lobo_oof_framewise.csv
+PASS - E2 output exists e2_vi_lobo_summary.json
+PASS - E2 output hash e2_vi_lobo_summary.json
+PASS - E2 output size e2_vi_lobo_summary.json
+PASS - E3 input hash predictor_frozen
+PASS - E3 input hash model_cache
+PASS - E3 input hash patches
+PASS - E3 input hash roster
+PASS - E3 input hash g1_fidelity
+PASS - E3 input hash g2_fidelity
+PASS - E3 output exists e3_calibration.json
+PASS - E3 output hash e3_calibration.json
+PASS - E3 output size e3_calibration.json
+PASS - E3 output exists e3_compact_table.csv
+PASS - E3 output hash e3_compact_table.csv
+PASS - E3 output size e3_compact_table.csv
+PASS - E3 output exists e3_key_numbers.json
+PASS - E3 output hash e3_key_numbers.json
+PASS - E3 output size e3_key_numbers.json
+PASS - E3 output exists e3_memory.csv
+PASS - E3 output hash e3_memory.csv
+PASS - E3 output size e3_memory.csv
+PASS - E3 output exists e3_runtime_framewise.csv
+PASS - E3 output hash e3_runtime_framewise.csv
+PASS - E3 output size e3_runtime_framewise.csv
+PASS - E3 output exists e3_runtime_repeats.csv
+PASS - E3 output hash e3_runtime_repeats.csv
+PASS - E3 output size e3_runtime_repeats.csv
+PASS - E3 output exists runtime_summary.csv
+PASS - E3 output hash runtime_summary.csv
+PASS - E3 output size runtime_summary.csv
+PASS - E1 canonical framewise == 8000
+PASS - E1 L0 reference == 320
+PASS - E1 L1-L6 == 1280 each
+PASS - E1 zero numerical failures
+PASS - E1 fidelity gate passed <1e-9
+PASS - E1 Patch Capture-B never >0.10 below Raw (worst 0.000)
+PASS - E2 501 scans x 5 methods
+PASS - E2 fold 0 train/test disjoint
+PASS - E2 fold 0 partitions 501
+PASS - E2 fold 1 train/test disjoint
+PASS - E2 fold 1 partitions 501
+PASS - E2 fold 2 train/test disjoint
+PASS - E2 fold 2 partitions 501
+PASS - E2 fold 3 train/test disjoint
+PASS - E2 fold 3 partitions 501
+PASS - E2 fold 4 train/test disjoint
+PASS - E2 fold 4 partitions 501
+PASS - E2 fold 5 train/test disjoint
+PASS - E2 fold 5 partitions 501
+PASS - E2 held-out blocks cover 501 exactly once
+PASS - E2 OOF positive, 6/6 blocks
+PASS - E2 flag OOF_POSITIVE_RETAINED
+PASS - E2 fidelity vs frozen g1 <1e-9
+PASS - E3 repeats == 80x6x5
+PASS - E3 framewise == 480
+PASS - E3 summary 6 methods x 5 (4 traj+ALL)
+PASS - E3 memory 6 methods
+PASS - E3 correctness vs frozen g1/g2 <1e-9
+PASS - E3 clustering reproduces frozen partition
+PASS - final_three_summary covers E1-E3
+
+==== OVERALL: ALL CHECKS PASSED ====

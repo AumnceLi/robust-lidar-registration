@@ -1,0 +1,7 @@
+method,reusable_model,registrations_per_frame,median_latency_ms,p95_latency_ms,overhead_vs_Raw_x,added_ms_vs_Raw,model_build_ms,query_ms,kdtree_ms,reg1_ms,reg2_ms,peak_rss_mb
+Raw,yes (nominal model cached),1,477.48,808.06,1.0,0.0,0.0,0.0,0.0,477.474,0.0,158.27
+Huber,yes (nominal model cached),1,588.4,988.42,1.232,110.92,0.0,0.0,0.0,588.394,0.0,157.12
+Patch,yes (corrected model+tree cached once),1,412.51,611.51,0.864,-64.97,0.0,0.0,0.0,412.498,0.0,158.49
+PatchHuber,yes (corrected model+tree cached once),1,470.12,736.05,0.985,-7.36,0.0,0.0,0.0,470.112,0.0,159.15
+Full,no (query-dependent model+tree per frame),1,427.74,701.95,0.896,-49.74,0.835,0.089,10.875,416.167,0.0,157.54
+EstimatedFull,partial (nominal cached; 2nd model query-dependent),2,953.34,1638.7,1.997,475.86,0.835,0.08,10.817,480.546,417.156,159.56

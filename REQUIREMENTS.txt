@@ -1,0 +1,15 @@
+# Core (required) — tested versions; the code is standard NumPy/SciPy and
+# generally works with nearby versions on Python 3.11+.
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+matplotlib==3.11.1
+
+# Optional but needed by some experiment / figure-check scripts:
+scikit-learn==1.9.0   # k-means patch partition and selected analyses
+psutil==7.2.2         # E3 runtime/memory benchmark
+pillow==12.3.0        # image checks in the figure pipeline
+PyMuPDF==1.28.2       # PDF inspection in a few figure/audit checks (import fitz)
+
+# Python 3.14 was used for the frozen runs.
+# PyYAML is NOT required (the .yaml frozen configs are documentation/parsed by hand).

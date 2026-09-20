@@ -1,0 +1,24 @@
+{
+ "endpoint": "P3 p2p translation-direction cosine, IN_SUPPORT, raw",
+ "n": 428,
+ "median_cos": 0.7881211922303517,
+ "ci95_L5": [
+  0.7188385877864466,
+  0.8297891754972712
+ ],
+ "frac_pos": 1.0,
+ "perm_p": 0.0004997501249375312,
+ "thresholds": {
+  "median_min": 0.6,
+  "ci95_lower_gt": 0.0,
+  "frac_pos_min": 0.7,
+  "perm_p_max": 0.01
+ },
+ "checks": {
+  "median_ge_060": true,
+  "ci95_lower_gt_0": true,
+  "frac_pos_ge_070": true,
+  "perm_p_le_001": true
+ },
+ "PASS": true
+}

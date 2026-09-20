@@ -1,0 +1,164 @@
+{
+  "raw_median_ms": 477.4811499955831,
+  "compact": [
+    {
+      "method": "Raw",
+      "reusable_model": "yes (nominal model cached)",
+      "registrations_per_frame": 1,
+      "median_latency_ms": 477.48,
+      "p95_latency_ms": 808.06,
+      "overhead_vs_Raw_x": 1.0,
+      "added_ms_vs_Raw": 0.0,
+      "model_build_ms": 0.0,
+      "query_ms": 0.0,
+      "kdtree_ms": 0.0,
+      "reg1_ms": 477.474,
+      "reg2_ms": 0.0,
+      "peak_rss_mb": 158.27
+    },
+    {
+      "method": "Huber",
+      "reusable_model": "yes (nominal model cached)",
+      "registrations_per_frame": 1,
+      "median_latency_ms": 588.4,
+      "p95_latency_ms": 988.42,
+      "overhead_vs_Raw_x": 1.232,
+      "added_ms_vs_Raw": 110.92,
+      "model_build_ms": 0.0,
+      "query_ms": 0.0,
+      "kdtree_ms": 0.0,
+      "reg1_ms": 588.394,
+      "reg2_ms": 0.0,
+      "peak_rss_mb": 157.12
+    },
+    {
+      "method": "Patch",
+      "reusable_model": "yes (corrected model+tree cached once)",
+      "registrations_per_frame": 1,
+      "median_latency_ms": 412.51,
+      "p95_latency_ms": 611.51,
+      "overhead_vs_Raw_x": 0.864,
+      "added_ms_vs_Raw": -64.97,
+      "model_build_ms": 0.0,
+      "query_ms": 0.0,
+      "kdtree_ms": 0.0,
+      "reg1_ms": 412.498,
+      "reg2_ms": 0.0,
+      "peak_rss_mb": 158.49
+    },
+    {
+      "method": "PatchHuber",
+      "reusable_model": "yes (corrected model+tree cached once)",
+      "registrations_per_frame": 1,
+      "median_latency_ms": 470.12,
+      "p95_latency_ms": 736.05,
+      "overhead_vs_Raw_x": 0.985,
+      "added_ms_vs_Raw": -7.36,
+      "model_build_ms": 0.0,
+      "query_ms": 0.0,
+      "kdtree_ms": 0.0,
+      "reg1_ms": 470.112,
+      "reg2_ms": 0.0,
+      "peak_rss_mb": 159.15
+    },
+    {
+      "method": "Full",
+      "reusable_model": "no (query-dependent model+tree per frame)",
+      "registrations_per_frame": 1,
+      "median_latency_ms": 427.74,
+      "p95_latency_ms": 701.95,
+      "overhead_vs_Raw_x": 0.896,
+      "added_ms_vs_Raw": -49.74,
+      "model_build_ms": 0.835,
+      "query_ms": 0.089,
+      "kdtree_ms": 10.875,
+      "reg1_ms": 416.167,
+      "reg2_ms": 0.0,
+      "peak_rss_mb": 157.54
+    },
+    {
+      "method": "EstimatedFull",
+      "reusable_model": "partial (nominal cached; 2nd model query-dependent)",
+      "registrations_per_frame": 2,
+      "median_latency_ms": 953.34,
+      "p95_latency_ms": 1638.7,
+      "overhead_vs_Raw_x": 1.997,
+      "added_ms_vs_Raw": 475.86,
+      "model_build_ms": 0.835,
+      "query_ms": 0.08,
+      "kdtree_ms": 10.817,
+      "reg1_ms": 480.546,
+      "reg2_ms": 417.156,
+      "peak_rss_mb": 159.56
+    }
+  ],
+  "calibration": {
+    "kmeans_cluster_ms_median": 151.6918999986956,
+    "kmeans_label_exact_match": true,
+    "kmeans_partition_ARI": 1.0,
+    "vi_field_build_ms_median": 0.1814499992178753,
+    "patch_corrected_model_build_ms": 0.9100999959628098,
+    "patch_kdtree_build_ms": 10.997699995641597,
+    "mu_patch_bytes": 576,
+    "patches_npz_size_b": 26129,
+    "predictor_size_b": 288502,
+    "model_points": 67870,
+    "correctness_max_abs_et_diff": {
+      "EstimatedFull": 1.4210854715202004e-14,
+      "Full": 1.4210854715202004e-14,
+      "Huber": 0.0,
+      "Patch": 1.4210854715202004e-14,
+      "Raw": 2.842170943040401e-14
+    }
+  },
+  "memory": [
+    {
+      "method": "Raw",
+      "n_frames": 80,
+      "baseline_after_common_load_mb": 154.85,
+      "peak_rss_mb": 158.27,
+      "delta_rss_mb": 3.42,
+      "tracemalloc_python_peak_mb": 5.383
+    },
+    {
+      "method": "Huber",
+      "n_frames": 80,
+      "baseline_after_common_load_mb": 153.43,
+      "peak_rss_mb": 157.12,
+      "delta_rss_mb": 3.69,
+      "tracemalloc_python_peak_mb": 5.396
+    },
+    {
+      "method": "Patch",
+      "n_frames": 80,
+      "baseline_after_common_load_mb": 154.79,
+      "peak_rss_mb": 158.49,
+      "delta_rss_mb": 3.69,
+      "tracemalloc_python_peak_mb": 5.377
+    },
+    {
+      "method": "PatchHuber",
+      "n_frames": 80,
+      "baseline_after_common_load_mb": 154.35,
+      "peak_rss_mb": 159.15,
+      "delta_rss_mb": 4.8,
+      "tracemalloc_python_peak_mb": 5.392
+    },
+    {
+      "method": "Full",
+      "n_frames": 80,
+      "baseline_after_common_load_mb": 154.44,
+      "peak_rss_mb": 157.54,
+      "delta_rss_mb": 3.1,
+      "tracemalloc_python_peak_mb": 7.568
+    },
+    {
+      "method": "EstimatedFull",
+      "n_frames": 80,
+      "baseline_after_common_load_mb": 155.48,
+      "peak_rss_mb": 159.56,
+      "delta_rss_mb": 4.08,
+      "tracemalloc_python_peak_mb": 7.564
+    }
+  ]
+}

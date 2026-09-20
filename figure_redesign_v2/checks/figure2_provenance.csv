@@ -1,0 +1,15 @@
+field,source,key_or_column,unit,min,median,max,valid_frames
+sensor_range,VI_ONLY_PREDICTOR_FROZEN.npz,vrange,m,8.7465,12.4,14.8022,501
+residual_norm,model_cache.npz + scan_####.npz,||aligned - xyz[nnidx]||,mm,,,,501
+
+bin,bin_lo_m,bin_hi_m,bin_center_m,patch3_n,patch3_q25_mm,patch3_median_mm,patch3_q75_mm,patch20_n,patch20_q25_mm,patch20_median_mm,patch20_q75_mm,patch8_n,patch8_q25_mm,patch8_median_mm,patch8_q75_mm
+0,8.7465,9.5035,9.1250,39,28.97,30.06,31.68,39,37.34,63.59,83.58,39,48.54,79.27,110.73
+1,9.5035,10.2604,9.8820,96,29.89,31.62,33.34,96,33.39,41.78,79.85,93,42.73,74.09,108.74
+2,10.2604,11.0174,10.6389,52,30.14,31.61,32.96,52,33.30,41.54,81.89,50,51.53,90.17,129.61
+3,11.0174,11.7744,11.3959,45,28.70,29.78,31.91,45,38.93,64.75,96.67,43,48.02,103.01,129.82
+4,11.7744,12.5313,12.1529,42,28.71,30.28,31.21,42,30.42,42.03,84.74,42,65.38,89.27,122.99
+5,12.5313,13.2883,12.9098,39,26.27,27.95,29.06,39,30.52,58.28,80.05,37,40.92,82.42,117.76
+6,13.2883,14.0453,13.6668,36,26.30,27.41,28.84,36,28.97,61.04,74.85,34,33.95,63.47,90.93
+7,14.0453,14.8022,14.4238,152,25.44,26.67,28.12,152,25.54,47.44,71.77,146,38.55,66.44,103.76
+
+note,Deprecated round1-2 used per-point scan['r'] (0-0.65m) and pooled all points. Correct version uses frame-level vrange (8.7-14.8m) and per-frame patch median. Verified against V1 CSVs with 0.0mm tolerance.

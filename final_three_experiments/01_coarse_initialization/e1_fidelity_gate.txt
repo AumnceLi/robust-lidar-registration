@@ -1,0 +1,5 @@
+E1 FIDELITY GATE — new path vs shipped L0-L3 framewise
+compared rows: 4160
+max |delta et| = 5.684e-14 mm ; max |delta eR| = 1.776e-15 deg ; max |delta objective| = 4.441e-16
+mismatches iters=0 termination=0 boundT=0 boundR=0 cap=0
+PASSED = True  (190.13s)

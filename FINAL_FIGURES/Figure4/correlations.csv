@@ -1,0 +1,3 @@
+predictor,spearman,pearson,n_conditions
+residual_rms_mm,0.53293543136191,0.7798838572555429,96
+gradient,0.9553852414541508,0.9500942914373305,96

@@ -1,0 +1,1321 @@
+{
+  "checks": [
+    {
+      "check": "Figure1.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure1.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure1.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure1_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure1_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure1 frozen source unchanged: FINAL_TOPJOURNAL_HARDENING/THEORY/derivation.md",
+      "passed": true
+    },
+    {
+      "check": "Figure1 frozen source unchanged: FINAL_TOPJOURNAL_HARDENING/AUDIT/operating_assumptions.md",
+      "passed": true
+    },
+    {
+      "check": "Figure1: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure1: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure1: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure1: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure1: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure1: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure1: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure1: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure1: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure2.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure2.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure2.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure2_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure2_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure2 frozen source unchanged: structured_mismatch_phase0/results/patch_persistence.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure2 frozen source unchanged: structured_mismatch_phase0/results/patch_definition.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure2 frozen source unchanged: structured_mismatch_phase0/scripts/cache/model_cache.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure2 frozen source unchanged: structured_mismatch_phase0/scripts/cache/patches.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure2 frozen source unchanged: structured_mismatch_phase0/scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure2: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure2: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure2: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure2: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure2: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure2: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure2: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure2: all 24 original patch labels present",
+      "passed": true
+    },
+    {
+      "check": "Figure2: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure2: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure3.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure3.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure3.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure3_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure3_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure3 frozen source unchanged: g_chain/G0_ROBUST_FALSIFICATION/results/frame_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure3 frozen source unchanged: g_chain/G3_FINAL_CONFIRMATION/results/g0_iii.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure3 frozen source unchanged: structured_mismatch_phase0/scripts/cache/rescue/objective_main.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure3: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure3: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure3: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure3: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure3: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure3: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure3: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure3: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure3: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure4.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure4.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure4.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure4_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure4_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure4 frozen source unchanged: structured_mismatch_phase0/scripts/cache/rescue/objective_main.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure4 frozen source unchanged: structured_mismatch_phase0/scripts/cache/ext/ext_objective_iv.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure4 frozen source unchanged: tj2_supplemental/cache/ii/ext_objective_ii.npz",
+      "passed": true
+    },
+    {
+      "check": "Figure4 frozen source unchanged: g_chain/G_GENERALITY/results/geometry_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure4: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure4: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure4: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure4: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure4: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure4: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure4: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure4: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure4: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure5.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure5.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure5.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure5_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure5_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure5 frozen source unchanged: g_chain/G0_ROBUST_FALSIFICATION/results/frame_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure5 frozen source unchanged: g_chain/G3_FINAL_CONFIRMATION/results/g0_iii.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure5 frozen source unchanged: g_chain/G_GENERALITY/results/geometry_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure5: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure5: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure5: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure5: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure5: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure5: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure5: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure5: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure5: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure6.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure6.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure6.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure6_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure6_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure6 frozen source unchanged: g_chain/HIERARCHY_TRANSFER/results/block_stats.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure6 frozen source unchanged: FINAL_TOPJOURNAL_HARDENING/DIRECT_BIAS_BASELINE/directbias_vs_mismatch.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure6: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure6: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure6: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure6: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure6: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure6: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure6: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure6: III DBS explicit N/A",
+      "passed": true
+    },
+    {
+      "check": "Figure6: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure6: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure7.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure7.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure7.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure7_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure7_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G1_MITIGATION/results/all_pose_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G3_FINAL_CONFIRMATION/results/g1_iii.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G2_ESTIMATED_VIEW/results/g2_vi.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G2_ESTIMATED_VIEW/results/g2_iv.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G2_ESTIMATED_VIEW/results/g2_ii.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G3_FINAL_CONFIRMATION/results/g2_iii.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G1_MITIGATION/results/method_comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure7 frozen source unchanged: g_chain/G3_FINAL_CONFIRMATION/results/single_look_summary.json",
+      "passed": true
+    },
+    {
+      "check": "Figure7: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure7: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure7: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure7: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure7: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure7: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure7: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure7: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure7: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure8.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Figure8.svg exists",
+      "passed": true
+    },
+    {
+      "check": "Figure8.png exists",
+      "passed": true
+    },
+    {
+      "check": "Figure8_caption_draft.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure8_notes.md exists",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen source unchanged: g_chain/G_GENERALITY/results/geometry_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen source unchanged: g_chain/G_GENERALITY/results/dose_response.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen source unchanged: FINAL_TOPJOURNAL_HARDENING/OPTIONAL_PHASE_MAP/results.csv",
+      "passed": true
+    },
+    {
+      "check": "Figure8: one page",
+      "passed": true
+    },
+    {
+      "check": "Figure8: 178 mm width and height <=220 mm",
+      "passed": true
+    },
+    {
+      "check": "Figure8: vector artwork, no rasterized page",
+      "passed": true
+    },
+    {
+      "check": "Figure8: fonts embedded and no Type3",
+      "passed": true
+    },
+    {
+      "check": "Figure8: no text outside page",
+      "passed": true
+    },
+    {
+      "check": "Figure8: contains panel A",
+      "passed": true
+    },
+    {
+      "check": "Figure8: ordinary text at least 7 pt",
+      "passed": true
+    },
+    {
+      "check": "Figure8: 600 dpi PNG",
+      "passed": true
+    },
+    {
+      "check": "Figure8: PNG size matches print size",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi: primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Raw et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Raw eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Huber et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Huber eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Patch et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Patch eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Full et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 vi Full eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv: primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Raw et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Raw eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Huber et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Huber eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Patch et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Patch eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Full et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iv Full eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii: primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Raw et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Raw eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Huber et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Huber eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Patch et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Patch eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Full et_mm: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 ii Full eR_deg: matches frozen summary",
+      "passed": true
+    },
+    {
+      "check": "Figure7 iii: primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure7 preserves II Full negative translation result",
+      "passed": true
+    },
+    {
+      "check": "Figure5 vi: p2p robust primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure5 iv: p2p robust primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure5 ii: p2p robust primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure5 iii: p2p robust primary sample count",
+      "passed": true
+    },
+    {
+      "check": "Figure5 includes LS Huber Trim only",
+      "passed": true
+    },
+    {
+      "check": "Figure6 III DBS not invented",
+      "passed": true
+    },
+    {
+      "check": "Figure6 focused on VI IV II",
+      "passed": true
+    },
+    {
+      "check": "Figure4 identical complete 96-condition scatter set",
+      "passed": true
+    },
+    {
+      "check": "Figure4 retains all D1-D5 and bound cases",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/0.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/0.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/0.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/2.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/2.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/2.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/5.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/5.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/5.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/10.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/10.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/10.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/25.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/25.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/25.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/50.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/50.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/50.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/100.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/100.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D1_appendage_disp/100.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.1/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.1/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.1/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.25/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.25/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.25/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.5/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.5/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/0.5/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/1.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/1.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/1.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/2.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/2.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GA/D5_appendage_tilt/2.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/0.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/0.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/0.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/2.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/2.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/2.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/5.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/5.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/5.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/10.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/10.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/10.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/25.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/25.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/25.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/50.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/50.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/50.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/100.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/100.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D1_appendage_disp/100.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.1/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.1/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.1/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.25/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.25/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.25/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.5/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.5/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/0.5/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/1.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/1.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/1.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/2.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/2.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GB/D5_appendage_tilt/2.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/0.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/0.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/0.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/2.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/2.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/2.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/5.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/5.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/5.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/10.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/10.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/10.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/25.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/25.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/25.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/50.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/50.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/50.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/100.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/100.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D1_appendage_disp/100.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.1/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.1/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.1/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.25/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.25/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.25/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.5/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.5/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/0.5/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/1.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/1.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/1.0/trim",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/2.0/huber",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/2.0/ls",
+      "passed": true
+    },
+    {
+      "check": "Figure8 frozen dose summary GC/D5_appendage_tilt/2.0/trim",
+      "passed": true
+    }
+  ],
+  "artifacts": [
+    {
+      "figure": 1,
+      "width_mm": 177.99999855889212,
+      "height_mm": 122.00000372992622,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 7.349999904632568,
+      "fonts": [
+        "CUKDJT+DejaVuSans-Oblique",
+        "COFZYB+DejaVuSans",
+        "DETAQT+ArialMT",
+        "ZOYUHH+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 2,
+      "width_mm": 177.99999855889212,
+      "height_mm": 147.99999940660263,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 9.0,
+      "fonts": [
+        "CJXOXT+ArialMT",
+        "GDYPJC+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 3,
+      "width_mm": 177.99999855889212,
+      "height_mm": 118.00000025431314,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 8.0,
+      "fonts": [
+        "EAAYYP+ArialMT",
+        "JLIMWE+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 4,
+      "width_mm": 177.99999855889212,
+      "height_mm": 158.0000027126736,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 7.349999904632568,
+      "fonts": [
+        "PWRSEI+DejaVuSans-Oblique",
+        "CDMIWX+DejaVuSans",
+        "ESWBCR+ArialMT",
+        "FBZABE+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 5,
+      "width_mm": 177.99999855889212,
+      "height_mm": 141.99999957614475,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 7.5,
+      "fonts": [
+        "DFHTES+ArialMT",
+        "BNZAKC+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 6,
+      "width_mm": 177.99999855889212,
+      "height_mm": 125.99999643961587,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 7.349999904632568,
+      "fonts": [
+        "CCUXIG+DejaVuSans-Oblique",
+        "GUMSZN+DejaVuSans",
+        "FDZYZC+ArialMT",
+        "XUMMWW+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 7,
+      "width_mm": 177.99999855889212,
+      "height_mm": 149.99999576144748,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 7.5,
+      "fonts": [
+        "DFKGPS+ArialMT",
+        "DCFJOM+Arial-BoldMT"
+      ]
+    },
+    {
+      "figure": 8,
+      "width_mm": 177.99999855889212,
+      "height_mm": 152.00000288221568,
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_ordinary_text_pt": 7.5,
+      "fonts": [
+        "DKAOCL+DejaVuSans-Oblique",
+        "BCQOVT+ArialMT",
+        "FNUYWV+Arial-BoldMT"
+      ]
+    }
+  ]
+}

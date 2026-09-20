@@ -1,0 +1,7 @@
+,0
+alpha_max_abs_diff_vs_phasemap,9.020562075079397e-17
+eta_t_median_abs_diff,0.0013891694511497681
+eta_R_median_abs_diff,0.0012627528726915024
+re_vs_stored_et_median_rel_diff,0.017483924385065706
+re_vs_stored_et_p90_rel_diff,0.08950307908441604
+re_vs_stored_rms_median_rel_diff,0.000562524123587892

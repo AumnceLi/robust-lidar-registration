@@ -1,0 +1,5 @@
+case,y_label,geometry,family_A,rms_A,et_A,family_B,rms_B,et_B,ratio_published
+1,GA · D1/D3,GA,D1 coherent displacement,7.95,8.93,D3 local mismatch,7.7,0.9,9.9
+2,GB · D4/D3,GB,D4 span growth,4.06,0.058,D3 local mismatch,3.97,0.621,10.6
+3,GB · D4/D5,GB,D4 span growth,5.33,0.184,D5 coherent tilt,5.08,1.528,8.3
+4,GC · D3/D4,GC,D3 local mismatch,3.75,0.988,D4 span growth,3.8,0.116,8.5

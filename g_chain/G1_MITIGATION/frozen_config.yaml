@@ -1,0 +1,32 @@
+# G1 frozen_config.yaml -- B2-INFORMED MISMATCH MITIGATION (oracle view). Sealed before outcome aggregation.
+gate: "Runs only because G0 = G0_PASS_ATTENUATED."
+no_new_learning:
+  frozen_predictor_sha256: "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  rule: "mu_j(z) queried from the frozen VI-only library; NO relearning on IV/II/V, no network/fusion/shrinkage/damping."
+correction:
+  equation: "m_i^corr = m_i + mu_{j(i)}(z)  (equivalently residual r_i^corr = r_i - mu_{j(i)})"
+  global_level: "mu_global = sum_s,j Vsum / sum Vcnt  (single 3-vector, view-independent)"
+  patch_level:  "mu_patch[j] = sum_s Vsum[s,j]/sum_s Vcnt[s,j]  (per-patch, view-independent)"
+  full_level:   "mu_full_j(z) = frozen k=16 adaptive-Gaussian view-conditioned per-patch vector"
+  consistency_check: "these 3 levels reproduce frozen VI cosines 0.385/0.824/0.938 ~ 0.391/0.824/0.940"
+view_mode: ORACLE   # z = z(T_GT); estimated view is G2, not mixed in here
+methods_frozen:
+  M0_raw_p2p: "raw nominal model, point-to-point LS ICP (== G0 R0)"
+  M1_raw_p2l: "raw nominal model, point-to-plane LS ICP (== G0 R1)"
+  M2_robust:   "raw nominal model, frozen Huber IRLS p2p (== G0 R2)"
+  M3_global_corr: "global-corrected model, p2p LS"
+  M4_patch_corr:  "patch-corrected model, p2p LS"
+  M5_full_corr:   "full view-conditioned-corrected model, p2p LS, oracle z"
+common_registration: {start: T_GT, basin: "0.30m/15deg", max_iter: 40, correspondence: "nearest point on the (corrected) model, recomputed", normals: frozen_PCA}
+primary_outcome: {translation: "e_t = ||t_hat-t_GT|| mm", rotation: "e_R = angle(R_hat R_GT^T) deg"}
+secondary_outcome: [GT_started_corrected_displacement, "||grad J_corr(T_GT)||", registration_objective, success_rate, runtime]
+common_yardstick: "every final pose is re-scored against the RAW nominal model objective J_raw for the objective-vs-pose test"
+sets: {VI: all_development_501, IV: in_support_156, II: in_support_428, V: all_1868_out_of_support_supportive_only}
+statistics: {block_bootstrap: "median L=5/10/20 B=2000", paired: "block sign-flip L=5 B=2000", independence: "frames not independent"}
+success_rule_G1_PASS:
+  - "consistent-direction physical improvement across multiple blocks / held-out trajectories"
+  - "translation gain without systematic rotation degradation"
+  - "not driven by a handful of frames"
+  - "block-aware paired CI / sign-flip supports improvement"
+  - "at least one of patch/full has stable mitigation value (M5 need not beat every robust baseline)"
+fail_rule: "e_corr >= e_raw, or systematic rotation degradation -> G1_FAIL_MITIGATION; no new model may be added."

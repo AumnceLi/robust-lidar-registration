@@ -1,0 +1,247 @@
+{
+  "generated_utc": "2026-09-12T15:44:38.273246+00:00",
+  "root": "D:\\doubao\\final_three_experiments",
+  "n_files": 48,
+  "files": [
+    {
+      "file": "01_coarse_initialization/E1_COARSE_INIT_REPORT.md",
+      "size_b": 7798,
+      "sha256": "6031e541dd94fb00236743b0868d617db8592ccdae14a7d8cd378e03b9450f37"
+    },
+    {
+      "file": "01_coarse_initialization/e1_coarse_L4L6_framewise.csv",
+      "size_b": 690433,
+      "sha256": "bbda51e043d7ffc4bea5ed81a61e6a25df5d4727b200fb57b34e06575dea5f13"
+    },
+    {
+      "file": "01_coarse_initialization/e1_coarse_init_framewise.csv",
+      "size_b": 1539170,
+      "sha256": "2d3340aacc8cb03a1a7dfda59d5272aadab6be702973fcee35e592f7030426c7"
+    },
+    {
+      "file": "01_coarse_initialization/e1_coarse_init_summary.csv",
+      "size_b": 23346,
+      "sha256": "d3b275db95adb1d0d194472bd8b7a6287969b6cf954352e6ab0c08f5f75dec0f"
+    },
+    {
+      "file": "01_coarse_initialization/e1_combine_analyze.py",
+      "size_b": 11073,
+      "sha256": "e9574fd6b0870b9ed586dce79156c1f33b0a2a3d1371511f1c519f2f4718100f"
+    },
+    {
+      "file": "01_coarse_initialization/e1_fidelity_gate.json",
+      "size_b": 429,
+      "sha256": "b20e3816bae47d75e28a448cf00f97866f7b4ddde1566ce8f6e54ab259724476"
+    },
+    {
+      "file": "01_coarse_initialization/e1_fidelity_gate.py",
+      "size_b": 5025,
+      "sha256": "a43e5ab071281841f2d5bc260ed08675286c15183fd775dc6aeadca1213a6ecc"
+    },
+    {
+      "file": "01_coarse_initialization/e1_fidelity_gate.txt",
+      "size_b": 263,
+      "sha256": "7164a51204ba64d48f0f1e012e694ba84e043565f0fcdccde2d89f2139a115c6"
+    },
+    {
+      "file": "01_coarse_initialization/e1_key_numbers.json",
+      "size_b": 6803,
+      "sha256": "bdc07fd474971649be720531afc7cd974300715456e6ac88c24fe1fe162cdb95"
+    },
+    {
+      "file": "01_coarse_initialization/e1_provenance.json",
+      "size_b": 7364,
+      "sha256": "c76c7c760d216f814f52d1c952ba94a74ac7500c635b8e9d354b00680e60cc70"
+    },
+    {
+      "file": "01_coarse_initialization/e1_provenance.py",
+      "size_b": 2626,
+      "sha256": "2b19ff315cb238dff3e1a7731dafbc5c7593e43bc6348f1298bb11f94cf8c6fc"
+    },
+    {
+      "file": "01_coarse_initialization/e1_run_coarse.py",
+      "size_b": 3646,
+      "sha256": "43ebea7291b7571b73215ededc1e690306ee3a7e3d1f4ee803f7d46856defaf8"
+    },
+    {
+      "file": "01_coarse_initialization/fig_e1_boundary_fail.png",
+      "size_b": 128861,
+      "sha256": "0c39065051b4f8b16a46d67a1737a7ce41579828c5bc17f70e31997beaff653e"
+    },
+    {
+      "file": "01_coarse_initialization/fig_e1_captureB.png",
+      "size_b": 133274,
+      "sha256": "edb945985ecc0640fb079a9bbeacce0ec1be1890482b89fe9433fba187f08f7f"
+    },
+    {
+      "file": "01_coarse_initialization/fig_e1_median_et.png",
+      "size_b": 205430,
+      "sha256": "c824ecda01e36fb6bc2946ad68ccbc74a31b87ddbece83149f5fc27ac652a2e6"
+    },
+    {
+      "file": "01_coarse_initialization/fig_e1_paper_composite.png",
+      "size_b": 180921,
+      "sha256": "8ace4ed3385b3643c8e926c7c3b3592b0f502bb4cdec6596ed0511a4c4caf089"
+    },
+    {
+      "file": "01_coarse_initialization/make_paper_figure.py",
+      "size_b": 1760,
+      "sha256": "bca2a12c67d5428a35a4cfae57830af6ebd455f21fce14491ce4be3acc006555"
+    },
+    {
+      "file": "02_vi_leave_block_out/E2_VI_OOF_REPORT.md",
+      "size_b": 5217,
+      "sha256": "1ceb9aaa09179e153b4c9dbaa0f788765055274833d26341ab3e5f84348a468c"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_analyze.py",
+      "size_b": 6066,
+      "sha256": "33f54acc7a6902845f2fc796f00030a517bc38bd291792e488113947f08200e6"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_lobo_fold_provenance.json",
+      "size_b": 47001,
+      "sha256": "d2017df13d620b5d5eb9da5d226eafc59000f0f49ef17b321d6557d773373427"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_provenance.json",
+      "size_b": 5159,
+      "sha256": "daf817e498847912d12caca2e5c1489cbd3e6471e3df28bc3850a958fc10be03"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_provenance.py",
+      "size_b": 2305,
+      "sha256": "f4b2346ef3bf91b99e4b58477344178f805b418cd1a409855896c29d99930068"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_run_lobo.py",
+      "size_b": 7270,
+      "sha256": "95bebae0fcd2f1e1ba4428b33889119a180ea689729469a994a52c336c65e495"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_vi_lobo_fold_table.csv",
+      "size_b": 1111,
+      "sha256": "091c46ba2fd07791a286cabfdb3f9070422f91eac277dcf497d25cdcd5e6502f"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_vi_lobo_framewise.csv",
+      "size_b": 144944,
+      "sha256": "ef42d0c95d0ec8bf42007b9df27e4101b075e8d39b31fdc045c5b2d46c2be2f5"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_vi_lobo_oof_framewise.csv",
+      "size_b": 165313,
+      "sha256": "7c934cff5eae57dd20aefa7c922c376f512223972217396d036968ac9be22454"
+    },
+    {
+      "file": "02_vi_leave_block_out/e2_vi_lobo_summary.json",
+      "size_b": 1533,
+      "sha256": "8ec4badcd025d2dc1d570a5478f9c3ff325607ce07b51225caf158a9e91956f7"
+    },
+    {
+      "file": "03_runtime_memory/E3_RUNTIME_REPORT.md",
+      "size_b": 5502,
+      "sha256": "c2ecef8e592c571b2d7fbc3e5cbcd67391e80c5042927bfe68f4614b9b58182b"
+    },
+    {
+      "file": "03_runtime_memory/e3_analyze.py",
+      "size_b": 3905,
+      "sha256": "d033ddcf743b6959f85d201ba9f8a85057044cecf635f8d47dc2ff861f62ed5a"
+    },
+    {
+      "file": "03_runtime_memory/e3_benchmark.py",
+      "size_b": 6949,
+      "sha256": "8dacf077673c2a261ed4de425faf98fa96b4d207c42990ea6040505b000a2d21"
+    },
+    {
+      "file": "03_runtime_memory/e3_calibration.json",
+      "size_b": 609,
+      "sha256": "cb19cccd478b5d38d1ea5e585068be81464ffd5754ce545bbdc67e59753e5ec8"
+    },
+    {
+      "file": "03_runtime_memory/e3_compact_table.csv",
+      "size_b": 824,
+      "sha256": "ce7331585597924bc6ba4bdbc4eda0411a277e3f0afb8d28030e71ead2619210"
+    },
+    {
+      "file": "03_runtime_memory/e3_core.py",
+      "size_b": 4990,
+      "sha256": "f424fbb147501d7d56aee11fd395336f217af124dab71f000496758b23929b92"
+    },
+    {
+      "file": "03_runtime_memory/e3_key_numbers.json",
+      "size_b": 4698,
+      "sha256": "78c996fa32ed51b73082cbbf433cfcd0706e998be8e710979b15b2490cfe892e"
+    },
+    {
+      "file": "03_runtime_memory/e3_mem_worker.py",
+      "size_b": 1686,
+      "sha256": "0231bdb8cbeba978ca7070582d9cb6a57dd829681c86ea20746b3f7cef78a057"
+    },
+    {
+      "file": "03_runtime_memory/e3_memory.csv",
+      "size_b": 317,
+      "sha256": "68ddcdd502391e3414b9a7a39415bbf3878ae25ec9187f1d37ea7d1691f0ec2b"
+    },
+    {
+      "file": "03_runtime_memory/e3_provenance.json",
+      "size_b": 5998,
+      "sha256": "b99db5887b0612f421cc35e26f2e47b898f124316a4a5b2cea6e8b02151c5730"
+    },
+    {
+      "file": "03_runtime_memory/e3_provenance.py",
+      "size_b": 2524,
+      "sha256": "2cf601231079633def746445bee21373a7a113100d1636450e5b4b5d7544b28c"
+    },
+    {
+      "file": "03_runtime_memory/e3_runtime_framewise.csv",
+      "size_b": 61475,
+      "sha256": "0cb5bdefeebd200795f78df78fef40599677d1676557f3206c24b8d95de113b1"
+    },
+    {
+      "file": "03_runtime_memory/e3_runtime_repeats.csv",
+      "size_b": 306802,
+      "sha256": "1c727984c2b701cec848c05b27df4ca15ae8706ab00305c2837b328f00a0d0ff"
+    },
+    {
+      "file": "03_runtime_memory/runtime_summary.csv",
+      "size_b": 4531,
+      "sha256": "324568b2e57eb78484fbae96144dad983b7807f8150999a98a37317e1e2b090a"
+    },
+    {
+      "file": "FINAL_EXPERIMENT_DECISION.md",
+      "size_b": 7249,
+      "sha256": "831a53beb5fd7573c7a2d8c5cd16ee33b69b7e113f01dfa12e64a58e59f78b3a"
+    },
+    {
+      "file": "FINAL_MANIFEST_log.txt",
+      "size_b": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "FINAL_THREE_AUDIT.md",
+      "size_b": 9657,
+      "sha256": "9c84dba5de1c7d70762803bba261f99fefc1749ec9e6ac49a58288745f6f65b4"
+    },
+    {
+      "file": "FINAL_VERIFICATION.txt",
+      "size_b": 4943,
+      "sha256": "9fc703541d0a7ef7453edd20d1545568d4117753a629ab358ff15d1c55a8f419"
+    },
+    {
+      "file": "PAPER_INSERTIONS_FINAL.md",
+      "size_b": 6409,
+      "sha256": "4d671e60d06630c923e681ddb6d99e0bc99cb4642cf18f44754ca8dca0c6caba"
+    },
+    {
+      "file": "assemble_final.py",
+      "size_b": 3058,
+      "sha256": "38ad188acbc20d2598ffea656c821a124d229f8a0f8e8c9f3eba74721fc9e290"
+    },
+    {
+      "file": "final_three_summary.csv",
+      "size_b": 34310,
+      "sha256": "e83ae5bca45dccb68e40f700d7bced33d2f085992c04b5e373b4c12b3b6e5714"
+    }
+  ]
+}

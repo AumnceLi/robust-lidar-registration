@@ -1,0 +1,17 @@
+asset_name,path,sha256,description
+Ast.pdf,originals/Ast.pdf,c17a3b166cddba319f0cd0e822c905b9f6f53b99e0e5f2fa99af6877c6e74f77,"Verified paper PDF (16 pages), source of Table 3"
+v1_figure1.png,originals/v1_figure1-6.png,FILE_NOT_FOUND,V1 Figure 1 input reference
+model_cache.npz,D:\doubao\structured_mismatch_phase0\scripts\cache\model_cache.npz,7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e,Nominal model 67870x3 + normals
+patches.npz,D:\doubao\structured_mismatch_phase0\scripts\cache\patches.npz,6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1,24-patch partition (lab 0..23)
+VI_ONLY_PREDICTOR_FROZEN.npz,D:\doubao\structured_mismatch_phase0\scripts\cache\rescue\VI_ONLY_PREDICTOR_FROZEN.npz,8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe,"Frozen correction field, SHA256=8abcc82d..."
+replay79_arms.csv,D:\doubao\FOLLOWUP_6_9\scripts\replay79_arms.csv,9098162bfa9c9df0ea12515ccb53ab588fdb32831386392a731fd033c9a4e148,Per-frame per-arm metrics (23268 rows)
+replay79_support.csv,D:\doubao\FOLLOWUP_6_9\scripts\replay79_support.csv,b911a4d82bf36e3f1a8d6c5ea461e2182749836e6d027fbf767a6323539a1f87,Common support frame flags
+pose_active_direct_framewise.csv,D:\doubao\revision_experiments\exp3_pose_active\pose_active_direct_framewise.csv,387d7395034aade294d92bd8dee9d68748b400ce3e0e36319f02d923935ba48c,Fig3 source (2912 rows=1456x2)
+dbs_vector_framewise.csv,D:\doubao\revision_experiments\exp4_historical_baselines\dbs_vector_framewise.csv,6212d97d59947dd0377781090e286692212ee02a9d5894b14e9abb5b2a08f93c,Global-Vector baseline
+e1_coarse_init_framewise.csv,D:\doubao\final_three_experiments\01_coarse_initialization\e1_coarse_init_framewise.csv,2d3340aacc8cb03a1a7dfda59d5272aadab6be702973fcee35e592f7030426c7,S2 initialization sensitivity (8000 rows)
+dose_response.csv,D:\doubao\g_chain\G_GENERALITY\results\dose_response.csv,98e917d2e1a774822dd16bfed43dc11964f43f16c40117dad1efd3b6d73b151b,Fig4 controlled mismatch dose-response
+phase_samples_ls_translation.csv,D:\doubao\FINAL_FIGURES\Figure8\phase_samples_ls_translation.csv,34296cacb22c0ad04a675d566b8d5be1f5bc9d9a01d687336a7a6aa58f8a6bbc,Fig4(d) phase map
+ii_failure_representative_frames.csv,D:\doubao\revision_experiments\06_II_failure_cases\ii_failure_representative_frames.csv,72900809a38bfae7a9d0061e24bc58b564c606fb3e62571c7251e6380b5b2c70,Fig6 frame selection source
+g_common.py,D:\doubao\g_chain\common\g_common.py,f3fad45b64940108ecf192d8ae8ea192c51881310702bfec76ede3ab4a6e3072,Frozen robust_icp / mu_for_view / corrected_model
+replay79.py,D:\doubao\FOLLOWUP_6_9\scripts\replay79.py,3d06b4f6c1c36bebb4efbb8581c7f60c9fe02a7f60ada47431ad94f81bf95699,Frozen replay pipeline (_one)
+p4_run.py,D:\doubao\revision_experiments\_lib\p4_run.py,c75128fc204786accbf322f1ca7b9a636cf086e662071b56a00a22a4fbb3b867,Frame selection rule code

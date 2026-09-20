@@ -1,0 +1,52 @@
+{
+ "experiment": "P2-A-normal-recompute",
+ "generated_utc": "2026-09-12T21:37:32",
+ "host": "Aumnce",
+ "python": "3.14.7",
+ "numpy": "2.5.3",
+ "scipy": "1.18.1",
+ "sklearn": "1.9.0",
+ "pandas": "3.0.5",
+ "git_commit": "NOT_A_GIT_REPO",
+ "exact_command": "python revision_experiments/_lib/p2a_run.py",
+ "config": {
+  "k": 24,
+  "normal_weight": 0.3,
+  "seed": 42,
+  "normal_protocol": "pca_normals k=16 smallest-eigenvector outward-from-centroid",
+  "channels": [
+   "p2p",
+   "p2l"
+  ]
+ },
+ "random_seed": 42,
+ "input_assets": {
+  "frozen_predictor_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz",
+   "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  },
+  "model_cache_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/model_cache.npz",
+   "sha256": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+  },
+  "patches_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/patches.npz",
+   "sha256": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+  },
+  "replay79_arms_csv": {
+   "path": "D:/doubao/FOLLOWUP_6_9/scripts/replay79_arms.csv",
+   "sha256": "9098162bfa9c9df0ea12515ccb53ab588fdb32831386392a731fd033c9a4e148"
+  }
+ },
+ "note": "Recomputed-normals ablation; p2p is a mechanistic gate (normals unused).",
+ "outputs": {
+  "framewise": {
+   "path": "D:/doubao/revision_experiments/04_normal_recompute/normal_recompute_framewise.csv",
+   "sha256": "82f60a24e4d738e97ae0841d30cea317211951c8cb20ffbd90c2798cb0ed978b"
+  },
+  "summary": {
+   "path": "D:/doubao/revision_experiments/04_normal_recompute/normal_recompute_summary.csv",
+   "sha256": "28fd5f873ea18192021033f34d806f25b92025404ce60ede745ee0be64c9368a"
+  }
+ }
+}

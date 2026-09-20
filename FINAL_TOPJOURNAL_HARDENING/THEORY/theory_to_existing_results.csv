@@ -1,0 +1,117 @@
+dataset,condition,metric,value,note
+VI,raw,spearman_gn6_vs_xit_p2p,0.43943765059522394,Spearman r between 6-DoF ||g|| and ||xi*_t||(mm); p=4.54e-25
+VI,raw,pearson_gn6_vs_xit_p2p,0.49473912703354167,Pearson r between 6-DoF ||g|| and ||xi*_t||(mm); p=2.73e-32
+VI,raw,spearman_gnt_vs_xit_p2p,0.4451682133740488,Spearman r between ||g_t||(m) and ||xi*_t||(mm); p=9.30e-26
+VI,raw,pearson_gnt_vs_xit_p2p,0.495498821328644,Pearson r between ||g_t||(m) and ||xi*_t||(mm); p=2.13e-32
+VI,raw,spearman_gn6_vs_xit_p2l,0.4201520146957082,Spearman r between 6-DoF ||g|| and ||xi*_t||(mm); p=7.58e-23
+VI,raw,pearson_gn6_vs_xit_p2l,-0.573511643718448,Pearson r between 6-DoF ||g|| and ||xi*_t||(mm); p=3.74e-45
+VI,raw,spearman_gnt_vs_xit_p2l,0.43486881217644396,Spearman r between ||g_t||(m) and ||xi*_t||(mm); p=1.57e-24
+VI,raw,pearson_gnt_vs_xit_p2l,0.2849937393376075,Pearson r between ||g_t||(m) and ||xi*_t||(mm); p=8.12e-11
+VI,scale,spearman_gn6_vs_xit_p2p,0.2644761791158719,Spearman r between 6-DoF ||g|| and ||xi*_t||(mm); p=1.83e-09
+VI,scale,pearson_gn6_vs_xit_p2p,0.3525656357715976,Pearson r between 6-DoF ||g|| and ||xi*_t||(mm); p=4.14e-16
+VI,scale,spearman_gnt_vs_xit_p2p,0.27991688336474463,Spearman r between ||g_t||(m) and ||xi*_t||(mm); p=1.80e-10
+VI,scale,pearson_gnt_vs_xit_p2p,0.3599943078204836,Pearson r between ||g_t||(m) and ||xi*_t||(mm); p=8.94e-17
+VI,scale,spearman_gn6_vs_xit_p2l,0.2657102368967245,Spearman r between 6-DoF ||g|| and ||xi*_t||(mm); p=1.53e-09
+VI,scale,pearson_gn6_vs_xit_p2l,-0.47106705973418866,Pearson r between 6-DoF ||g|| and ||xi*_t||(mm); p=4.89e-29
+VI,scale,spearman_gnt_vs_xit_p2l,0.2750062265906434,Spearman r between ||g_t||(m) and ||xi*_t||(mm); p=3.82e-10
+VI,scale,pearson_gnt_vs_xit_p2l,0.1680528633911381,Pearson r between ||g_t||(m) and ||xi*_t||(mm); p=1.57e-04
+VI,combined,spearman_gn6_vs_xit_p2p,0.6203273135004891,Spearman r between 6-DoF ||g|| and ||xi*_t||(mm); p=1.31e-54
+VI,combined,pearson_gn6_vs_xit_p2p,0.6806638667629178,Pearson r between 6-DoF ||g|| and ||xi*_t||(mm); p=1.93e-69
+VI,combined,spearman_gnt_vs_xit_p2p,0.6195226757640099,Spearman r between ||g_t||(m) and ||xi*_t||(mm); p=1.96e-54
+VI,combined,pearson_gnt_vs_xit_p2p,0.6923336949709425,Pearson r between ||g_t||(m) and ||xi*_t||(mm); p=9.88e-73
+VI,combined,spearman_gn6_vs_xit_p2l,0.29911520385523777,Spearman r between 6-DoF ||g|| and ||xi*_t||(mm); p=8.17e-12
+VI,combined,pearson_gn6_vs_xit_p2l,0.13855968010655043,Pearson r between 6-DoF ||g|| and ||xi*_t||(mm); p=1.88e-03
+VI,combined,spearman_gnt_vs_xit_p2l,0.3796163847603598,Spearman r between ||g_t||(m) and ||xi*_t||(mm); p=1.28e-18
+VI,combined,pearson_gnt_vs_xit_p2l,0.3714191800664881,Pearson r between ||g_t||(m) and ||xi*_t||(mm); p=7.81e-18
+VI,raw,cos_cos6_median_p2p,0.7692792267869619,"median direction cosine; IQR=[0.515,0.911]; frac positive=0.946"
+VI,raw,cos_cost_median_p2p,0.9585870087204602,"median direction cosine; IQR=[0.895,0.978]; frac positive=0.966"
+VI,raw,cos_cosr_median_p2p,0.6632498470850068,"median direction cosine; IQR=[-0.530,0.847]; frac positive=0.657"
+VI,raw,cos_cos6_median_p2l,0.25527497540919725,"median direction cosine; IQR=[-0.094,0.549]; frac positive=0.697"
+VI,raw,cos_cost_median_p2l,0.38629421698424093,"median direction cosine; IQR=[-0.184,0.726]; frac positive=0.685"
+VI,raw,cos_cosr_median_p2l,0.016796427332267366,"median direction cosine; IQR=[-0.511,0.473]; frac positive=0.506"
+VI,scale,cos_cos6_median_p2p,0.8102914898004516,"median direction cosine; IQR=[0.520,0.936]; frac positive=0.890"
+VI,scale,cos_cost_median_p2p,0.9697860421627393,"median direction cosine; IQR=[0.916,0.987]; frac positive=0.978"
+VI,scale,cos_cosr_median_p2p,0.737482281102708,"median direction cosine; IQR=[-0.502,0.905]; frac positive=0.627"
+VI,scale,cos_cos6_median_p2l,0.1857356760276474,"median direction cosine; IQR=[-0.240,0.471]; frac positive=0.635"
+VI,scale,cos_cost_median_p2l,0.3199797269393557,"median direction cosine; IQR=[-0.388,0.690]; frac positive=0.631"
+VI,scale,cos_cosr_median_p2l,-0.008696055675830552,"median direction cosine; IQR=[-0.492,0.469]; frac positive=0.496"
+VI,combined,cos_cos6_median_p2p,0.9806991893631423,"median direction cosine; IQR=[0.957,0.992]; frac positive=0.988"
+VI,combined,cos_cost_median_p2p,0.9984576911217502,"median direction cosine; IQR=[0.996,0.999]; frac positive=1.000"
+VI,combined,cos_cosr_median_p2p,0.9681322964636131,"median direction cosine; IQR=[0.917,0.991]; frac positive=0.986"
+VI,combined,cos_cos6_median_p2l,0.2605419767724856,"median direction cosine; IQR=[-0.126,0.558]; frac positive=0.679"
+VI,combined,cos_cost_median_p2l,0.4085237206009915,"median direction cosine; IQR=[-0.237,0.748]; frac positive=0.671"
+VI,combined,cos_cosr_median_p2l,0.1098483341780154,"median direction cosine; IQR=[-0.443,0.558]; frac positive=0.556"
+VI,raw,spearman_D1norm_vs_gn_p2p,0.9272260896533626,Spearman r between ||D1|| and ||J^T W delta||; p=5.48e-215
+VI,raw,spearman_D1norm_vs_gn_p2l,0.8313855476298401,Spearman r between ||D1|| and ||J^T W delta||; p=2.02e-129
+VI,raw,spearman_D2norm_vs_gn_p2p,-0.4637534174678532,Spearman r between ||D2|| and ||J^T W delta||; p=4.41e-28
+VI,raw,spearman_D2norm_vs_gn_p2l,-0.41580370732638305,Spearman r between ||D2|| and ||J^T W delta||; p=2.30e-22
+VI,raw,spearman_torquenorm_vs_gn_p2p,0.5099942266860702,Spearman r between ||torque|| and ||J^T W delta||; p=1.59e-34
+VI,raw,spearman_torquenorm_vs_gn_p2l,0.4452056206312475,Spearman r between ||torque|| and ||J^T W delta||; p=9.21e-26
+VI,raw,spearman_J0_vs_gn_p2p,0.9002090798482717,Spearman r between residual energy J0 and pose-active ||g||; p=2.71e-182
+VI,raw,spearman_J0_vs_gn_p2l,0.829322422883317,Spearman r between residual energy J0 and pose-active ||g||; p=3.18e-128
+IV,raw,cos_t_median_p2p,0.9462324365621111,"IV held-out (n=2428); IQR=[0.846,0.977]"
+IV,raw,cos_t_median_p2l,0.3768475434338102,"IV held-out (n=2428); IQR=[0.032,0.682]"
+IV,N1,cos_t_median_p2p,0.9839260430801133,"IV held-out (n=2428); IQR=[0.913,0.996]"
+IV,N1,cos_t_median_p2l,0.25590967400825027,"IV held-out (n=2428); IQR=[-0.527,0.844]"
+IV,N2,cos_t_median_p2p,0.9801657464798303,"IV held-out (n=2428); IQR=[0.885,0.996]"
+IV,N2,cos_t_median_p2l,0.22446324547756763,"IV held-out (n=2428); IQR=[-0.434,0.788]"
+IV,N3,cos_t_median_p2p,0.9883788625749093,"IV held-out (n=2428); IQR=[0.952,0.996]"
+IV,N3,cos_t_median_p2l,0.3124958728995515,"IV held-out (n=2428); IQR=[-0.181,0.725]"
+V,raw,cos_t_median_p2p,0.6475291802095866,V held-out (n=1868); median translation direction cosine
+V,raw,cos_t_median_p2l,0.18936742606573095,V held-out (n=1868); median translation direction cosine
+II,raw,cos_t_median_p2p,0.9914231991216584,II held-out (n=1253); median translation direction cosine
+II,raw,cos_t_median_p2l,0.6881212792614839,II held-out (n=1253); median translation direction cosine
+VI,raw,landscape_descent_agreement_p2p,0.8489687292082502,"fraction of (frame,axis,scale) probes where predicted descent side has lower full-NN J than J0; n=9018"
+VI,raw,landscape_descent_agreement_small_p2p,0.9291417165668663,same but smallest scale only (most local); n=3006
+VI,raw,landscape_descent_agreement_p2l,0.783433133732535,"fraction of (frame,axis,scale) probes where predicted descent side has lower full-NN J than J0; n=9018"
+VI,raw,landscape_descent_agreement_small_p2l,0.8399866932801064,same but smallest scale only (most local); n=3006
+G_GENERALITY,D1_appendage_disp,et_median_ls,4.444495295087889,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D1_appendage_disp,eR_median_ls,0.0178888419833583,median endpoint rotation error (deg)
+G_GENERALITY,D1_appendage_disp,et_median_huber,2.4104756688779174,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D1_appendage_disp,eR_median_huber,0.023357847946013748,median endpoint rotation error (deg)
+G_GENERALITY,D1_appendage_disp,et_median_trim,1.1295473099698672,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D1_appendage_disp,eR_median_trim,0.01187084677956585,median endpoint rotation error (deg)
+G_GENERALITY,D3_local_surface_off,et_median_ls,1.5637221659289646,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D3_local_surface_off,eR_median_ls,0.09290690596772415,median endpoint rotation error (deg)
+G_GENERALITY,D3_local_surface_off,et_median_huber,0.5337607345936122,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D3_local_surface_off,eR_median_huber,0.01523645346605205,median endpoint rotation error (deg)
+G_GENERALITY,D3_local_surface_off,et_median_trim,0.040713526065557504,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D3_local_surface_off,eR_median_trim,0.00234400188051525,median endpoint rotation error (deg)
+G_GENERALITY,D5_appendage_tilt,et_median_ls,0.1316878025411179,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D5_appendage_tilt,eR_median_ls,0.09278984769939685,median endpoint rotation error (deg)
+G_GENERALITY,D5_appendage_tilt,et_median_huber,0.1647999068363099,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D5_appendage_tilt,eR_median_huber,0.08719370517334596,median endpoint rotation error (deg)
+G_GENERALITY,D5_appendage_tilt,et_median_trim,0.1291317058006801,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D5_appendage_tilt,eR_median_trim,0.0459681437522425,median endpoint rotation error (deg)
+G_GENERALITY,D4_appendage_scale,et_median_ls,0.06474043933165816,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D4_appendage_scale,eR_median_ls,0.007797324314247501,median endpoint rotation error (deg)
+G_GENERALITY,D4_appendage_scale,et_median_huber,0.09643352507060746,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D4_appendage_scale,eR_median_huber,0.008315330957945451,median endpoint rotation error (deg)
+G_GENERALITY,D4_appendage_scale,et_median_trim,0.0442662004472043,median endpoint translation error over doses; on_bound_frac=0.000
+G_GENERALITY,D4_appendage_scale,eR_median_trim,0.0035356603510044,median endpoint rotation error (deg)
+G_GENERALITY,D2_missing_component,et_median_ls,0.0518162668462807,median endpoint translation error over doses; on_bound_frac=0.111
+G_GENERALITY,D2_missing_component,eR_median_ls,0.00481204600377725,median endpoint rotation error (deg)
+G_GENERALITY,D2_missing_component,et_median_huber,0.03203011732451015,median endpoint translation error over doses; on_bound_frac=0.056
+G_GENERALITY,D2_missing_component,eR_median_huber,0.00299217778858945,median endpoint rotation error (deg)
+G_GENERALITY,D2_missing_component,et_median_trim,0.03562253852561035,median endpoint translation error over doses; on_bound_frac=0.072
+G_GENERALITY,D2_missing_component,eR_median_trim,0.004660900421777451,median endpoint rotation error (deg)
+G_GENERALITY,D1_appendage_disp@50mm_p2p,et_median_ls,39.16299536763985,"D1 appendage displacement 50mm dose, p2p, ls loss"
+G_GENERALITY,D1_appendage_disp@50mm_p2p,et_median_huber,42.75337415090006,"D1 appendage displacement 50mm dose, p2p, huber loss"
+G_GENERALITY,D1_appendage_disp@50mm_p2p,et_median_trim,50.68385125231589,"D1 appendage displacement 50mm dose, p2p, trim loss; TWO-STAGE cross-geometry median (median of per-geometry medians GA/GB/GC), same aggregation as ls/huber rows and dose_response.csv -> rounds to 50.7"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag0.0,0.0211242439979239,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag2.0,0.9053625984659606,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag5.0,2.2974478032050936,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag10.0,8.878535614031371,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag25.0,17.564955333848218,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag50.0,39.16299536763985,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D1_dose_response_ls_p2p,et_median_mag100.0,80.72569505134135,"D1 appendage displacement dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag0.0,0.0245300768130802,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag2.0,0.13162325559037916,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag5.0,0.317004148990387,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag10.0,0.620566039533851,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag25.0,1.58016359530089,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag50.0,3.5836471943425097,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D3_dose_response_ls_p2p,et_median_mag100.0,13.845619655957329,"D3 local surface offset dose-response, LS, p2p"
+G_GENERALITY,D2_missing_component@f1.0_p2p,et_median_ls,300.0,"D2 fully missing component, p2p, ls; on_bound_frac=0.667"
+G_GENERALITY,D2_missing_component@f1.0_p2p,et_median_huber,11.601123869756673,"D2 fully missing component, p2p, huber; on_bound_frac=0.333"
+G_GENERALITY,D2_missing_component@f1.0_p2p,et_median_trim,132.74533758092943,"D2 fully missing component, p2p, trim; on_bound_frac=0.433"

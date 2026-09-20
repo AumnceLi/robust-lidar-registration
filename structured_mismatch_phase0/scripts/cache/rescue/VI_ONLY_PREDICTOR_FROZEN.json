@@ -1,0 +1,53 @@
+{
+ "file": "VI_ONLY_PREDICTOR_FROZEN.npz",
+ "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe",
+ "k_nearest_views": 16,
+ "kernel": "adaptive Gaussian exp(-0.5(d/d_k)^2) over k nearest VI scans",
+ "distance": "d^2=(dr/range_std)^2 + view_angle^2 ; range_std=2.064280 m",
+ "tau_support": 0.4403305559611483,
+ "tau_rule": "95th pct of VI leave-block-out nearest-training distance",
+ "min_patch_support": 3,
+ "fallback": "global inverse-distance weighted VI mean",
+ "predicted_step": "dxi=-pinv(H_nom) ghat; H_nom on nominal support cloud (no test residual)",
+ "alpha_VI_raw_p2p": 0.019993613253598837,
+ "alpha_note": "single through-origin scalar fit on VI only; never refit on IV/V",
+ "primary_nuisance": [
+  "raw",
+  "N1",
+  "N2",
+  "N3"
+ ],
+ "N4": "stress test only",
+ "seed": 42,
+ "nc0": {
+  "kstar": 16,
+  "kgrid": [
+   8,
+   16,
+   32,
+   64
+  ],
+  "kscores": {
+   "8": 0.9366934887386176,
+   "16": 0.9399670626717981,
+   "32": 0.9308097475645901,
+   "64": 0.8982830858266179
+  },
+  "primary": "A|raw|p2p",
+  "median_cos": 0.9399670626717981,
+  "ci95_block": [
+   0.9293662371731706,
+   0.9483992679156114
+  ],
+  "frac_pos": 1.0,
+  "perm_p": 0.0004997501249375312,
+  "mag_spearman": -0.03835007276284085,
+  "thresholds": {
+   "median_min": 0.7,
+   "ci_lo_gt": 0,
+   "frac_pos_min": 0.75,
+   "perm_p_max": 0.01
+  },
+  "pass": true
+ }
+}

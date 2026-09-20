@@ -1,0 +1,155 @@
+{
+  "_frozen": {
+    "tau_support": 0.4403305559611483,
+    "range_std_m": 2.064279860893169,
+    "kstar": 16,
+    "vi_n": 501,
+    "vi_range_min": 8.7465,
+    "vi_range_max": 14.8022,
+    "vi_n_orientation_blocks": 6
+  },
+  "trajectories": {
+    "i": {
+      "tag": "Dataset_I",
+      "n_scans": 2483,
+      "N_IN_SUPPORT": 313,
+      "in_support_fraction": 0.12605718888441403,
+      "tau_support": 0.4403305559611483,
+      "n_support_blocks": 1,
+      "support_block_lengths": [
+        313
+      ],
+      "support_block_max_len": 313,
+      "support_block_median_len": 313.0,
+      "temporal_deciles_with_support": 2,
+      "temporal_decile_in_counts": [
+        146,
+        167,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_distinct_VI_orientation_blocks_hit": 2,
+      "vi_orientation_blocks_hit": [
+        0,
+        1
+      ],
+      "range_min_all": 2.848986748535522,
+      "range_max_all": 16.823485263164315,
+      "range_mean_all": 7.986235318233017,
+      "range_median_all": 6.559448610098719,
+      "range_min_ins": 14.80864100293923,
+      "range_max_ins": 14.89120294847351,
+      "range_median_ins": 14.83081790180687,
+      "vi_range_overlay_frac_all": 0.14941602899718082,
+      "dmin_p50": 1.1682162008237575,
+      "dmin_p05": 0.11310416571956357,
+      "dmin_p95": 2.924412589766951,
+      "nearest_view_angle_deg_median": 33.71578503001431,
+      "nearest_scaled_range_gap_median": -1.0594831300534844
+    },
+    "ii": {
+      "tag": "Dataset_II",
+      "n_scans": 1253,
+      "N_IN_SUPPORT": 428,
+      "in_support_fraction": 0.3415802075019952,
+      "tau_support": 0.4403305559611483,
+      "n_support_blocks": 3,
+      "support_block_lengths": [
+        55,
+        273,
+        100
+      ],
+      "support_block_max_len": 273,
+      "support_block_median_len": 100.0,
+      "temporal_deciles_with_support": 5,
+      "temporal_decile_in_counts": [
+        0,
+        68,
+        125,
+        126,
+        34,
+        75,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_distinct_VI_orientation_blocks_hit": 6,
+      "vi_orientation_blocks_hit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "range_min_all": 3.8495060354358457,
+      "range_max_all": 19.776018153397747,
+      "range_mean_all": 9.318297029754426,
+      "range_median_all": 9.115113487829372,
+      "range_min_ins": 8.544574656591283,
+      "range_max_ins": 15.690988584156264,
+      "range_median_ins": 10.731475436910301,
+      "vi_range_overlay_frac_all": 0.4118116520351157,
+      "dmin_p50": 0.7817626515292581,
+      "dmin_p05": 0.12597767943944574,
+      "dmin_p95": 2.4463480242139455,
+      "nearest_view_angle_deg_median": 17.63429433177954,
+      "nearest_scaled_range_gap_median": -0.13964458454363785
+    },
+    "iii": {
+      "tag": "Dataset_III",
+      "n_scans": 1302,
+      "N_IN_SUPPORT": 371,
+      "in_support_fraction": 0.2849462365591398,
+      "tau_support": 0.4403305559611483,
+      "n_support_blocks": 1,
+      "support_block_lengths": [
+        371
+      ],
+      "support_block_max_len": 371,
+      "support_block_median_len": 371.0,
+      "temporal_deciles_with_support": 4,
+      "temporal_decile_in_counts": [
+        0,
+        107,
+        130,
+        130,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_distinct_VI_orientation_blocks_hit": 6,
+      "vi_orientation_blocks_hit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "range_min_all": 3.8370270738208228,
+      "range_max_all": 19.775337056133836,
+      "range_mean_all": 8.38475993286859,
+      "range_median_all": 6.8725871188998795,
+      "range_min_ins": 8.24967057950401,
+      "range_max_ins": 15.464116869402245,
+      "range_median_ins": 11.509149184879652,
+      "vi_range_overlay_frac_all": 0.2411674347158218,
+      "dmin_p50": 1.5119385160842418,
+      "dmin_p05": 0.15654501812498658,
+      "dmin_p95": 2.4921288446602197,
+      "nearest_view_angle_deg_median": 18.216837233036568,
+      "nearest_scaled_range_gap_median": -1.1396491378338947
+    }
+  }
+}

@@ -1,0 +1,379 @@
+table,trajectory,method,block,n_frames,median_translation_mm,median_rotation_deg,axis,block_benefit
+marginal,II,Huber Raw,0,50,70.04550668620264,1.0927122578488464,both,
+marginal,II,Huber Raw,1,50,47.629959924699165,0.8599218725501445,both,
+marginal,II,Huber Raw,2,50,66.42057753247806,1.0428751600486503,both,
+marginal,II,Huber Raw,3,50,55.34818176161909,0.941141820420071,both,
+marginal,II,Huber Raw,4,50,50.92201621160673,1.044080823812601,both,
+marginal,II,Huber Raw,5,50,43.994726478403265,1.0799599983042834,both,
+marginal,II,Huber Raw,6,50,33.4083710289151,1.0642346147539177,both,
+marginal,II,Huber Raw,7,50,27.328921893658137,1.2552441705331367,both,
+marginal,II,Huber Raw,8,28,34.19691682466947,1.1392902210585631,both,
+marginal,II,Patch LS,0,50,38.65335537036603,1.1023224674143024,both,
+marginal,II,Patch LS,1,50,40.20806056767968,1.1925905881235481,both,
+marginal,II,Patch LS,2,50,76.27406296780603,1.8071102970220498,both,
+marginal,II,Patch LS,3,50,46.54409533290669,1.3767578879765419,both,
+marginal,II,Patch LS,4,50,32.41111376676234,0.40599010304462724,both,
+marginal,II,Patch LS,5,50,35.311931385330496,0.936949549834607,both,
+marginal,II,Patch LS,6,50,88.89010703610367,0.6491342687556886,both,
+marginal,II,Patch LS,7,50,41.217285478730474,1.8988715763341537,both,
+marginal,II,Patch LS,8,28,47.65376273732501,1.6990402499921906,both,
+marginal,II,Patch+Huber,0,50,16.92647837124914,1.1232660904714065,both,
+marginal,II,Patch+Huber,1,50,41.65721943437417,0.8578753244826564,both,
+marginal,II,Patch+Huber,2,50,63.17904917232619,1.5202202770545616,both,
+marginal,II,Patch+Huber,3,50,43.342459167617235,2.149115652212972,both,
+marginal,II,Patch+Huber,4,50,40.502990417263646,1.7529885453305114,both,
+marginal,II,Patch+Huber,5,50,38.67953611678568,2.0911087314102783,both,
+marginal,II,Patch+Huber,6,50,38.799000587875,1.1026067992068558,both,
+marginal,II,Patch+Huber,7,50,40.40805040693602,1.3197348242353542,both,
+marginal,II,Patch+Huber,8,28,31.45671681155727,1.263553045831451,both,
+marginal,II,Patch+Trim,0,50,11.00842013541736,1.4140736486699725,both,
+marginal,II,Patch+Trim,1,50,37.86295490024459,0.9895670943693113,both,
+marginal,II,Patch+Trim,2,50,63.56233690778294,1.9702354192480787,both,
+marginal,II,Patch+Trim,3,50,48.294591511323304,2.6413797304432434,both,
+marginal,II,Patch+Trim,4,50,44.70027691893647,2.6175831100128946,both,
+marginal,II,Patch+Trim,5,50,35.283266350119845,2.6316735875691224,both,
+marginal,II,Patch+Trim,6,50,36.17765499008655,1.0224291983809217,both,
+marginal,II,Patch+Trim,7,50,40.6776717570816,1.2869215586630771,both,
+marginal,II,Patch+Trim,8,28,22.84594305546078,0.843047989974629,both,
+marginal,II,Raw LS,0,50,89.72698451737185,1.9297996857706083,both,
+marginal,II,Raw LS,1,50,57.15757534817586,1.2900040477287007,both,
+marginal,II,Raw LS,2,50,93.80070846383565,1.9266777357968496,both,
+marginal,II,Raw LS,3,50,74.84078412222338,1.5626192881965615,both,
+marginal,II,Raw LS,4,50,64.14790162922029,2.038308776204911,both,
+marginal,II,Raw LS,5,50,61.648560388482906,1.3711068243762852,both,
+marginal,II,Raw LS,6,50,94.98086405875941,1.0656116976508612,both,
+marginal,II,Raw LS,7,50,53.722764037283355,2.7316205196765835,both,
+marginal,II,Raw LS,8,28,55.66782266632798,1.5561611549641716,both,
+marginal,II,Trim Raw,0,50,63.576702193063745,0.9959674848059428,both,
+marginal,II,Trim Raw,1,50,48.50562862120782,0.8641329593362135,both,
+marginal,II,Trim Raw,2,50,58.74510912960195,1.118522412297439,both,
+marginal,II,Trim Raw,3,50,50.09799629893922,1.114644983615193,both,
+marginal,II,Trim Raw,4,50,47.04545494315148,1.0606208542549616,both,
+marginal,II,Trim Raw,5,50,40.26334992290915,1.02107156682922,both,
+marginal,II,Trim Raw,6,50,32.37789138001727,0.9143743195675051,both,
+marginal,II,Trim Raw,7,50,25.685327936425544,1.1072291841762105,both,
+marginal,II,Trim Raw,8,28,32.31459563826418,1.2318210838545585,both,
+marginal,III,Huber Raw,0,50,66.01657818627702,1.2698806625088106,both,
+marginal,III,Huber Raw,1,50,61.61769454404253,1.4723706343204361,both,
+marginal,III,Huber Raw,2,50,60.80618235969014,1.5166673420389296,both,
+marginal,III,Huber Raw,3,50,56.50293953467082,0.9795904132111174,both,
+marginal,III,Huber Raw,4,50,45.781779833612234,0.8918720810360465,both,
+marginal,III,Huber Raw,5,50,44.0623664245345,0.8774310919903793,both,
+marginal,III,Huber Raw,6,50,36.91234947411445,0.9102663469888412,both,
+marginal,III,Huber Raw,7,21,37.21204610153736,0.9279068649597813,both,
+marginal,III,Patch LS,0,50,59.872028014755415,1.9674616432766654,both,
+marginal,III,Patch LS,1,50,62.78762958451281,2.4280442277163914,both,
+marginal,III,Patch LS,2,50,45.22750367723258,2.6457782553661193,both,
+marginal,III,Patch LS,3,50,22.441606378253052,1.8446301629930852,both,
+marginal,III,Patch LS,4,50,17.860576731808084,2.788815160125875,both,
+marginal,III,Patch LS,5,50,23.963873514890302,1.219501125373713,both,
+marginal,III,Patch LS,6,50,49.17639577861411,1.0659053963063305,both,
+marginal,III,Patch LS,7,21,58.51130155117774,1.92324918016252,both,
+marginal,III,Patch+Huber,0,50,51.36978747930888,2.2448881615022596,both,
+marginal,III,Patch+Huber,1,50,45.67884423796458,2.571507131984829,both,
+marginal,III,Patch+Huber,2,50,25.677334396079466,1.2050684416826325,both,
+marginal,III,Patch+Huber,3,50,19.177720190736824,1.6483167763280253,both,
+marginal,III,Patch+Huber,4,50,20.457293182237528,2.0328875759449003,both,
+marginal,III,Patch+Huber,5,50,25.495961956846806,0.9853131281030092,both,
+marginal,III,Patch+Huber,6,50,48.77997619653251,1.3834412004956453,both,
+marginal,III,Patch+Huber,7,21,37.6361147612901,1.7035376551630517,both,
+marginal,III,Patch+Trim,0,50,49.77631146335664,2.6788999619623493,both,
+marginal,III,Patch+Trim,1,50,39.99131432962559,2.4748270636455514,both,
+marginal,III,Patch+Trim,2,50,22.30871200413936,1.6884197772444127,both,
+marginal,III,Patch+Trim,3,50,38.9771120619296,2.2829460574520413,both,
+marginal,III,Patch+Trim,4,50,35.17458563064845,2.7120806972554563,both,
+marginal,III,Patch+Trim,5,50,30.447124864884184,1.2790704634108052,both,
+marginal,III,Patch+Trim,6,50,49.6755136173922,1.6714402131721569,both,
+marginal,III,Patch+Trim,7,21,42.55094415510956,1.89539707028947,both,
+marginal,III,Raw LS,0,50,79.17141388770943,1.4670188203907504,both,
+marginal,III,Raw LS,1,50,90.61309406629223,1.802275409454904,both,
+marginal,III,Raw LS,2,50,85.00276269533241,3.362244593134884,both,
+marginal,III,Raw LS,3,50,64.78443774217322,1.7883641404433934,both,
+marginal,III,Raw LS,4,50,49.89795950288007,1.5481026423232604,both,
+marginal,III,Raw LS,5,50,51.70794146670495,1.1429974714664208,both,
+marginal,III,Raw LS,6,50,58.082790747938404,1.5129027300766296,both,
+marginal,III,Raw LS,7,21,100.60352184974192,3.257714721231708,both,
+marginal,III,Trim Raw,0,50,63.50134018405872,1.2601060007408806,both,
+marginal,III,Trim Raw,1,50,58.9572963078665,1.3562076384120236,both,
+marginal,III,Trim Raw,2,50,55.712008038097395,1.2430983854633462,both,
+marginal,III,Trim Raw,3,50,58.20674807638904,1.0819727490700792,both,
+marginal,III,Trim Raw,4,50,49.97038997067267,1.170601626981938,both,
+marginal,III,Trim Raw,5,50,46.97713069335603,1.050274958619803,both,
+marginal,III,Trim Raw,6,50,34.69287767031089,0.9893522907412546,both,
+marginal,III,Trim Raw,7,21,32.78887892885919,0.9728154440218558,both,
+marginal,IV,Huber Raw,0,50,139.64441262932112,3.5641504325391153,both,
+marginal,IV,Huber Raw,1,50,133.12093145034362,3.4932467041606268,both,
+marginal,IV,Huber Raw,2,50,129.734252458625,3.290552708799721,both,
+marginal,IV,Huber Raw,3,6,119.80243714004726,2.974492155772853,both,
+marginal,IV,Patch LS,0,50,120.49021037123283,4.464348027248754,both,
+marginal,IV,Patch LS,1,50,120.5265036175322,4.016040565444146,both,
+marginal,IV,Patch LS,2,50,142.29249559345453,3.6353855553197207,both,
+marginal,IV,Patch LS,3,6,146.52729836328137,3.7744131156655274,both,
+marginal,IV,Patch+Huber,0,50,102.06394733394637,3.9712465984300067,both,
+marginal,IV,Patch+Huber,1,50,99.45259681768468,3.709552639973742,both,
+marginal,IV,Patch+Huber,2,50,105.26915301118729,3.0884311256079817,both,
+marginal,IV,Patch+Huber,3,6,112.6817952740907,3.430218508819697,both,
+marginal,IV,Patch+Trim,0,50,93.27216077622936,4.073511790685178,both,
+marginal,IV,Patch+Trim,1,50,88.7654597707016,3.6519283710405954,both,
+marginal,IV,Patch+Trim,2,50,80.82788043431313,2.848060910562575,both,
+marginal,IV,Patch+Trim,3,6,95.23467865336346,3.208700916630921,both,
+marginal,IV,Raw LS,0,50,158.48159106545035,4.164412815344692,both,
+marginal,IV,Raw LS,1,50,157.5282097360639,3.883711342382385,both,
+marginal,IV,Raw LS,2,50,167.34531348982387,3.902590187239403,both,
+marginal,IV,Raw LS,3,6,164.4280207452125,3.9195880366896585,both,
+marginal,IV,Trim Raw,0,50,132.8604392388392,3.279416771586676,both,
+marginal,IV,Trim Raw,1,50,125.93000903879434,3.3402896743943784,both,
+marginal,IV,Trim Raw,2,50,118.30105148785981,3.065163684799024,both,
+marginal,IV,Trim Raw,3,6,109.34036048625836,2.466550076746662,both,
+marginal,VI,Huber Raw,0,70,132.82968525230854,4.472297097069026,both,
+marginal,VI,Huber Raw,1,70,133.53328459729948,4.420476659502134,both,
+marginal,VI,Huber Raw,2,79,148.22968668594535,4.201380244015467,both,
+marginal,VI,Huber Raw,3,96,154.27598076537305,3.714676261003903,both,
+marginal,VI,Huber Raw,4,103,152.8180538043268,3.345247713528155,both,
+marginal,VI,Huber Raw,5,83,153.47516867669228,3.9528756727112175,both,
+marginal,VI,Patch LS,0,70,111.17278296418343,5.596231448258425,both,
+marginal,VI,Patch LS,1,70,110.49228072619013,5.614928935173253,both,
+marginal,VI,Patch LS,2,79,123.63434041915492,5.025115371335013,both,
+marginal,VI,Patch LS,3,96,122.54133485006295,4.153367118075278,both,
+marginal,VI,Patch LS,4,103,117.66796238468564,3.741547084778768,both,
+marginal,VI,Patch LS,5,83,113.90884206317152,4.860549739363893,both,
+marginal,VI,Patch+Huber,0,70,90.2835463269892,5.026537130414687,both,
+marginal,VI,Patch+Huber,1,70,90.77174179225311,5.0997730440149445,both,
+marginal,VI,Patch+Huber,2,79,103.84078716177292,4.655044696067238,both,
+marginal,VI,Patch+Huber,3,96,104.74726928041608,3.7739868077965735,both,
+marginal,VI,Patch+Huber,4,103,104.51210768195055,3.535582709582838,both,
+marginal,VI,Patch+Huber,5,83,106.93515606220498,4.247575098837055,both,
+marginal,VI,Patch+Trim,0,70,80.15760640934818,5.129316275111723,both,
+marginal,VI,Patch+Trim,1,70,83.36269037318849,5.096143780901682,both,
+marginal,VI,Patch+Trim,2,79,94.08117441385964,4.598344897590456,both,
+marginal,VI,Patch+Trim,3,96,98.98347413171929,4.044670003541772,both,
+marginal,VI,Patch+Trim,4,103,101.57984382726724,3.932975491821847,both,
+marginal,VI,Patch+Trim,5,83,101.25381264625402,4.593115342952655,both,
+marginal,VI,Raw LS,0,70,151.2366843667386,4.830858011549058,both,
+marginal,VI,Raw LS,1,70,151.7171962222667,4.98605656047063,both,
+marginal,VI,Raw LS,2,79,165.48160584038175,4.65190744384812,both,
+marginal,VI,Raw LS,3,96,168.3879374728596,4.177004632046296,both,
+marginal,VI,Raw LS,4,103,164.1743308436783,3.8645555293233618,both,
+marginal,VI,Raw LS,5,83,159.27083929792474,4.602200871581683,both,
+marginal,VI,Trim Raw,0,70,126.36471818314675,4.3252362359183385,both,
+marginal,VI,Trim Raw,1,70,128.2221615414623,4.238132836558908,both,
+marginal,VI,Trim Raw,2,79,141.25769998186465,3.909126274598786,both,
+marginal,VI,Trim Raw,3,96,147.5338419792232,3.374409933985076,both,
+marginal,VI,Trim Raw,4,103,149.18695304959223,3.1898121199277725,both,
+marginal,VI,Trim Raw,5,83,153.49609413685977,3.968738769753978,both,
+paired,VI,Patch+Huber vs Patch LS,0,70,,,translation,20.069228124841096
+paired,VI,Patch+Huber vs Patch LS,1,70,,,translation,20.81332884482758
+paired,VI,Patch+Huber vs Patch LS,2,79,,,translation,19.1116070387163
+paired,VI,Patch+Huber vs Patch LS,3,96,,,translation,16.61922921699717
+paired,VI,Patch+Huber vs Patch LS,4,103,,,translation,12.032894327677198
+paired,VI,Patch+Huber vs Patch LS,5,83,,,translation,7.513230829928617
+paired,VI,Patch+Huber vs Patch LS,0,70,,,rotation,0.4491276367330559
+paired,VI,Patch+Huber vs Patch LS,1,70,,,rotation,0.6217322539135313
+paired,VI,Patch+Huber vs Patch LS,2,79,,,rotation,0.40219225761454913
+paired,VI,Patch+Huber vs Patch LS,3,96,,,rotation,0.33626543159544475
+paired,VI,Patch+Huber vs Patch LS,4,103,,,rotation,0.2846669394154677
+paired,VI,Patch+Huber vs Patch LS,5,83,,,rotation,0.44861565248640556
+paired,VI,Patch+Huber vs Huber Raw,0,70,,,translation,42.28372585101233
+paired,VI,Patch+Huber vs Huber Raw,1,70,,,translation,41.76822111625632
+paired,VI,Patch+Huber vs Huber Raw,2,79,,,translation,43.99813544787531
+paired,VI,Patch+Huber vs Huber Raw,3,96,,,translation,48.38053081039001
+paired,VI,Patch+Huber vs Huber Raw,4,103,,,translation,46.12023646877964
+paired,VI,Patch+Huber vs Huber Raw,5,83,,,translation,47.3264724275686
+paired,VI,Patch+Huber vs Huber Raw,0,70,,,rotation,-0.5262307492187621
+paired,VI,Patch+Huber vs Huber Raw,1,70,,,rotation,-0.7395458594795317
+paired,VI,Patch+Huber vs Huber Raw,2,79,,,rotation,-0.42243343808232225
+paired,VI,Patch+Huber vs Huber Raw,3,96,,,rotation,-0.1295167412366789
+paired,VI,Patch+Huber vs Huber Raw,4,103,,,rotation,-0.19772322382714114
+paired,VI,Patch+Huber vs Huber Raw,5,83,,,rotation,-0.4448255125527081
+paired,VI,Patch+Trim vs Patch LS,0,70,,,translation,30.375759242429005
+paired,VI,Patch+Trim vs Patch LS,1,70,,,translation,30.612961014340712
+paired,VI,Patch+Trim vs Patch LS,2,79,,,translation,29.22120068259491
+paired,VI,Patch+Trim vs Patch LS,3,96,,,translation,21.99300955736785
+paired,VI,Patch+Trim vs Patch LS,4,103,,,translation,16.250882808391196
+paired,VI,Patch+Trim vs Patch LS,5,83,,,translation,11.595325592707937
+paired,VI,Patch+Trim vs Patch LS,0,70,,,rotation,0.49486820270476395
+paired,VI,Patch+Trim vs Patch LS,1,70,,,rotation,0.40334854152781396
+paired,VI,Patch+Trim vs Patch LS,2,79,,,rotation,0.36393691197810973
+paired,VI,Patch+Trim vs Patch LS,3,96,,,rotation,0.1892121516418248
+paired,VI,Patch+Trim vs Patch LS,4,103,,,rotation,0.09624930452660596
+paired,VI,Patch+Trim vs Patch LS,5,83,,,rotation,0.21876934839069495
+paired,VI,Patch+Trim vs Trim Raw,0,70,,,translation,46.28901173589192
+paired,VI,Patch+Trim vs Trim Raw,1,70,,,translation,45.999505605883066
+paired,VI,Patch+Trim vs Trim Raw,2,79,,,translation,46.876334308476956
+paired,VI,Patch+Trim vs Trim Raw,3,96,,,translation,48.35394661838725
+paired,VI,Patch+Trim vs Trim Raw,4,103,,,translation,47.79196051309755
+paired,VI,Patch+Trim vs Trim Raw,5,83,,,translation,51.88992414589201
+paired,VI,Patch+Trim vs Trim Raw,0,70,,,rotation,-0.6579605288563819
+paired,VI,Patch+Trim vs Trim Raw,1,70,,,rotation,-0.9702598061688286
+paired,VI,Patch+Trim vs Trim Raw,2,79,,,rotation,-0.8238339406094815
+paired,VI,Patch+Trim vs Trim Raw,3,96,,,rotation,-0.713186750656783
+paired,VI,Patch+Trim vs Trim Raw,4,103,,,rotation,-0.7121860486990852
+paired,VI,Patch+Trim vs Trim Raw,5,83,,,rotation,-0.8399599471119155
+paired,IV,Patch+Huber vs Patch LS,0,50,,,translation,18.133112968935258
+paired,IV,Patch+Huber vs Patch LS,1,50,,,translation,22.145154979573377
+paired,IV,Patch+Huber vs Patch LS,2,50,,,translation,35.79630620103043
+paired,IV,Patch+Huber vs Patch LS,3,6,,,translation,33.307994136775406
+paired,IV,Patch+Huber vs Patch LS,0,50,,,rotation,0.37959962771581846
+paired,IV,Patch+Huber vs Patch LS,1,50,,,rotation,0.22863051336560947
+paired,IV,Patch+Huber vs Patch LS,2,50,,,rotation,0.6490637490108166
+paired,IV,Patch+Huber vs Patch LS,3,6,,,rotation,0.192423637703933
+paired,IV,Patch+Huber vs Huber Raw,0,50,,,translation,35.09508349920641
+paired,IV,Patch+Huber vs Huber Raw,1,50,,,translation,34.0074480654955
+paired,IV,Patch+Huber vs Huber Raw,2,50,,,translation,25.758679683410286
+paired,IV,Patch+Huber vs Huber Raw,3,6,,,translation,7.251000297428384
+paired,IV,Patch+Huber vs Huber Raw,0,50,,,rotation,-0.6542790387426181
+paired,IV,Patch+Huber vs Huber Raw,1,50,,,rotation,-0.038245736000473984
+paired,IV,Patch+Huber vs Huber Raw,2,50,,,rotation,0.27099479986248065
+paired,IV,Patch+Huber vs Huber Raw,3,6,,,rotation,-0.596904786033897
+paired,IV,Patch+Trim vs Patch LS,0,50,,,translation,27.869365391106086
+paired,IV,Patch+Trim vs Patch LS,1,50,,,translation,31.89387012153731
+paired,IV,Patch+Trim vs Patch LS,2,50,,,translation,59.48080209349975
+paired,IV,Patch+Trim vs Patch LS,3,6,,,translation,49.710228373212324
+paired,IV,Patch+Trim vs Patch LS,0,50,,,rotation,0.3992497528391863
+paired,IV,Patch+Trim vs Patch LS,1,50,,,rotation,0.2919945674583162
+paired,IV,Patch+Trim vs Patch LS,2,50,,,rotation,1.0038426495465496
+paired,IV,Patch+Trim vs Patch LS,3,6,,,rotation,0.260839948555023
+paired,IV,Patch+Trim vs Trim Raw,0,50,,,translation,38.913005433528824
+paired,IV,Patch+Trim vs Trim Raw,1,50,,,translation,38.66545236712529
+paired,IV,Patch+Trim vs Trim Raw,2,50,,,translation,39.50682860286665
+paired,IV,Patch+Trim vs Trim Raw,3,6,,,translation,14.32590025011369
+paired,IV,Patch+Trim vs Trim Raw,0,50,,,rotation,-0.9670748899897954
+paired,IV,Patch+Trim vs Trim Raw,1,50,,,rotation,-0.280316828431191
+paired,IV,Patch+Trim vs Trim Raw,2,50,,,rotation,0.39065686499479035
+paired,IV,Patch+Trim vs Trim Raw,3,6,,,rotation,-0.8336747177065964
+paired,II,Patch+Huber vs Patch LS,0,50,,,translation,22.537108050496112
+paired,II,Patch+Huber vs Patch LS,1,50,,,translation,1.7301618938858816
+paired,II,Patch+Huber vs Patch LS,2,50,,,translation,10.34616745040271
+paired,II,Patch+Huber vs Patch LS,3,50,,,translation,3.9228243855402596
+paired,II,Patch+Huber vs Patch LS,4,50,,,translation,-7.602540495234376
+paired,II,Patch+Huber vs Patch LS,5,50,,,translation,-2.905289220524267
+paired,II,Patch+Huber vs Patch LS,6,50,,,translation,68.55957052430583
+paired,II,Patch+Huber vs Patch LS,7,50,,,translation,2.3209302736451676
+paired,II,Patch+Huber vs Patch LS,8,28,,,translation,16.117611052187414
+paired,II,Patch+Huber vs Patch LS,0,50,,,rotation,0.11957475735517059
+paired,II,Patch+Huber vs Patch LS,1,50,,,rotation,0.33030202209217546
+paired,II,Patch+Huber vs Patch LS,2,50,,,rotation,0.40025069246730904
+paired,II,Patch+Huber vs Patch LS,3,50,,,rotation,-0.885833808407412
+paired,II,Patch+Huber vs Patch LS,4,50,,,rotation,-1.3538788194324591
+paired,II,Patch+Huber vs Patch LS,5,50,,,rotation,-1.1914100659387836
+paired,II,Patch+Huber vs Patch LS,6,50,,,rotation,-0.3886572378065227
+paired,II,Patch+Huber vs Patch LS,7,50,,,rotation,0.4667372071849917
+paired,II,Patch+Huber vs Patch LS,8,28,,,rotation,0.41888573625334863
+paired,II,Patch+Huber vs Huber Raw,0,50,,,translation,53.492807346972775
+paired,II,Patch+Huber vs Huber Raw,1,50,,,translation,4.425490248603346
+paired,II,Patch+Huber vs Huber Raw,2,50,,,translation,3.9022966924017126
+paired,II,Patch+Huber vs Huber Raw,3,50,,,translation,11.828102262771207
+paired,II,Patch+Huber vs Huber Raw,4,50,,,translation,10.82422742051192
+paired,II,Patch+Huber vs Huber Raw,5,50,,,translation,3.6331150104331584
+paired,II,Patch+Huber vs Huber Raw,6,50,,,translation,0.9222831386045343
+paired,II,Patch+Huber vs Huber Raw,7,50,,,translation,-13.275113192168417
+paired,II,Patch+Huber vs Huber Raw,8,28,,,translation,1.9474441806998026
+paired,II,Patch+Huber vs Huber Raw,0,50,,,rotation,0.000577588233453108
+paired,II,Patch+Huber vs Huber Raw,1,50,,,rotation,-0.040336259652540674
+paired,II,Patch+Huber vs Huber Raw,2,50,,,rotation,-0.44852935105082836
+paired,II,Patch+Huber vs Huber Raw,3,50,,,rotation,-1.2033657563412683
+paired,II,Patch+Huber vs Huber Raw,4,50,,,rotation,-0.7086226787839083
+paired,II,Patch+Huber vs Huber Raw,5,50,,,rotation,-1.0367653361413955
+paired,II,Patch+Huber vs Huber Raw,6,50,,,rotation,-0.46217541243727894
+paired,II,Patch+Huber vs Huber Raw,7,50,,,rotation,-0.0908645236288988
+paired,II,Patch+Huber vs Huber Raw,8,28,,,rotation,-0.19215585701686133
+paired,II,Patch+Trim vs Patch LS,0,50,,,translation,24.504716919665455
+paired,II,Patch+Trim vs Patch LS,1,50,,,translation,3.9219154888172767
+paired,II,Patch+Trim vs Patch LS,2,50,,,translation,13.857480448489355
+paired,II,Patch+Trim vs Patch LS,3,50,,,translation,-0.8591538989768317
+paired,II,Patch+Trim vs Patch LS,4,50,,,translation,-11.821238638742049
+paired,II,Patch+Trim vs Patch LS,5,50,,,translation,0.6084377437451991
+paired,II,Patch+Trim vs Patch LS,6,50,,,translation,67.50732916302401
+paired,II,Patch+Trim vs Patch LS,7,50,,,translation,3.05640356620437
+paired,II,Patch+Trim vs Patch LS,8,28,,,translation,26.14906360799947
+paired,II,Patch+Trim vs Patch LS,0,50,,,rotation,-0.20155247024447304
+paired,II,Patch+Trim vs Patch LS,1,50,,,rotation,0.24453461363744755
+paired,II,Patch+Trim vs Patch LS,2,50,,,rotation,-0.0855850541214791
+paired,II,Patch+Trim vs Patch LS,3,50,,,rotation,-1.276159560576834
+paired,II,Patch+Trim vs Patch LS,4,50,,,rotation,-2.2148288461393975
+paired,II,Patch+Trim vs Patch LS,5,50,,,rotation,-1.6559615989239225
+paired,II,Patch+Trim vs Patch LS,6,50,,,rotation,-0.4489995721924624
+paired,II,Patch+Trim vs Patch LS,7,50,,,rotation,0.5081401895419373
+paired,II,Patch+Trim vs Patch LS,8,28,,,rotation,0.8437399458249248
+paired,II,Patch+Trim vs Trim Raw,0,50,,,translation,50.16159229350947
+paired,II,Patch+Trim vs Trim Raw,1,50,,,translation,8.253988269247984
+paired,II,Patch+Trim vs Trim Raw,2,50,,,translation,-4.008520363404081
+paired,II,Patch+Trim vs Trim Raw,3,50,,,translation,1.8067033358394866
+paired,II,Patch+Trim vs Trim Raw,4,50,,,translation,2.936082449763717
+paired,II,Patch+Trim vs Trim Raw,5,50,,,translation,5.7046734095717895
+paired,II,Patch+Trim vs Trim Raw,6,50,,,translation,6.512580700397059
+paired,II,Patch+Trim vs Trim Raw,7,50,,,translation,-16.19346687275571
+paired,II,Patch+Trim vs Trim Raw,8,28,,,translation,9.733764285044586
+paired,II,Patch+Trim vs Trim Raw,0,50,,,rotation,-0.3912701516141809
+paired,II,Patch+Trim vs Trim Raw,1,50,,,rotation,-0.11969676409318608
+paired,II,Patch+Trim vs Trim Raw,2,50,,,rotation,-0.8564298219159431
+paired,II,Patch+Trim vs Trim Raw,3,50,,,rotation,-1.5515693347505892
+paired,II,Patch+Trim vs Trim Raw,4,50,,,rotation,-1.54511735484206
+paired,II,Patch+Trim vs Trim Raw,5,50,,,rotation,-1.5882766540294324
+paired,II,Patch+Trim vs Trim Raw,6,50,,,rotation,-0.08563571344213233
+paired,II,Patch+Trim vs Trim Raw,7,50,,,rotation,-0.1773196742774441
+paired,II,Patch+Trim vs Trim Raw,8,28,,,rotation,0.36894485573213137
+paired,III,Patch+Huber vs Patch LS,0,50,,,translation,8.036123934984943
+paired,III,Patch+Huber vs Patch LS,1,50,,,translation,15.989636755854299
+paired,III,Patch+Huber vs Patch LS,2,50,,,translation,19.86545030739999
+paired,III,Patch+Huber vs Patch LS,3,50,,,translation,2.907539136209614
+paired,III,Patch+Huber vs Patch LS,4,50,,,translation,-3.4764589236771535
+paired,III,Patch+Huber vs Patch LS,5,50,,,translation,-2.3403944592619528
+paired,III,Patch+Huber vs Patch LS,6,50,,,translation,0.4754488348783923
+paired,III,Patch+Huber vs Patch LS,7,21,,,translation,20.158707803814927
+paired,III,Patch+Huber vs Patch LS,0,50,,,rotation,-0.331183194786264
+paired,III,Patch+Huber vs Patch LS,1,50,,,rotation,-0.09090194154098241
+paired,III,Patch+Huber vs Patch LS,2,50,,,rotation,1.2324068367083727
+paired,III,Patch+Huber vs Patch LS,3,50,,,rotation,0.14741610297093488
+paired,III,Patch+Huber vs Patch LS,4,50,,,rotation,0.789700734237622
+paired,III,Patch+Huber vs Patch LS,5,50,,,rotation,0.2671391699609685
+paired,III,Patch+Huber vs Patch LS,6,50,,,rotation,-0.19292425593425794
+paired,III,Patch+Huber vs Patch LS,7,21,,,rotation,-0.08305770763752562
+paired,III,Patch+Huber vs Huber Raw,0,50,,,translation,16.111274250928954
+paired,III,Patch+Huber vs Huber Raw,1,50,,,translation,17.69316553552853
+paired,III,Patch+Huber vs Huber Raw,2,50,,,translation,36.978040372909604
+paired,III,Patch+Huber vs Huber Raw,3,50,,,translation,37.722157483250676
+paired,III,Patch+Huber vs Huber Raw,4,50,,,translation,25.324486651374706
+paired,III,Patch+Huber vs Huber Raw,5,50,,,translation,18.81559115440691
+paired,III,Patch+Huber vs Huber Raw,6,50,,,translation,-12.217120139092742
+paired,III,Patch+Huber vs Huber Raw,7,21,,,translation,-0.7476153362449196
+paired,III,Patch+Huber vs Huber Raw,0,50,,,rotation,-0.9648796642540187
+paired,III,Patch+Huber vs Huber Raw,1,50,,,rotation,-1.0148453700153333
+paired,III,Patch+Huber vs Huber Raw,2,50,,,rotation,0.3351002612471343
+paired,III,Patch+Huber vs Huber Raw,3,50,,,rotation,-0.6425885526410176
+paired,III,Patch+Huber vs Huber Raw,4,50,,,rotation,-1.1817945599174422
+paired,III,Patch+Huber vs Huber Raw,5,50,,,rotation,-0.03343096526275574
+paired,III,Patch+Huber vs Huber Raw,6,50,,,rotation,-0.508808670627812
+paired,III,Patch+Huber vs Huber Raw,7,21,,,rotation,-0.7353897057698797
+paired,III,Patch+Trim vs Patch LS,0,50,,,translation,6.416124291250345
+paired,III,Patch+Trim vs Patch LS,1,50,,,translation,22.357248334864614
+paired,III,Patch+Trim vs Patch LS,2,50,,,translation,27.77917493195738
+paired,III,Patch+Trim vs Patch LS,3,50,,,translation,-19.58402571620865
+paired,III,Patch+Trim vs Patch LS,4,50,,,translation,-18.268873262003446
+paired,III,Patch+Trim vs Patch LS,5,50,,,translation,-6.786747135482964
+paired,III,Patch+Trim vs Patch LS,6,50,,,translation,-1.1203221827531173
+paired,III,Patch+Trim vs Patch LS,7,21,,,translation,15.37201600170723
+paired,III,Patch+Trim vs Patch LS,0,50,,,rotation,-0.649152291651816
+paired,III,Patch+Trim vs Patch LS,1,50,,,rotation,-0.08659959645243287
+paired,III,Patch+Trim vs Patch LS,2,50,,,rotation,0.9850844837243027
+paired,III,Patch+Trim vs Patch LS,3,50,,,rotation,-0.5066244806678951
+paired,III,Patch+Trim vs Patch LS,4,50,,,rotation,0.13177002721462894
+paired,III,Patch+Trim vs Patch LS,5,50,,,rotation,0.017098508441316995
+paired,III,Patch+Trim vs Patch LS,6,50,,,rotation,-0.43649739616783934
+paired,III,Patch+Trim vs Patch LS,7,21,,,rotation,-0.06004318831873001
+paired,III,Patch+Trim vs Trim Raw,0,50,,,translation,11.439787280873912
+paired,III,Patch+Trim vs Trim Raw,1,50,,,translation,19.83044657051415
+paired,III,Patch+Trim vs Trim Raw,2,50,,,translation,32.85940103730436
+paired,III,Patch+Trim vs Trim Raw,3,50,,,translation,19.86179438385047
+paired,III,Patch+Trim vs Trim Raw,4,50,,,translation,16.708834365852923
+paired,III,Patch+Trim vs Trim Raw,5,50,,,translation,16.40011472165776
+paired,III,Patch+Trim vs Trim Raw,6,50,,,translation,-15.370843594957524
+paired,III,Patch+Trim vs Trim Raw,7,21,,,translation,-11.344538738582472
+paired,III,Patch+Trim vs Trim Raw,0,50,,,rotation,-1.4878106839525795
+paired,III,Patch+Trim vs Trim Raw,1,50,,,rotation,-1.145615937539302
+paired,III,Patch+Trim vs Trim Raw,2,50,,,rotation,-0.37424485403844787
+paired,III,Patch+Trim vs Trim Raw,3,50,,,rotation,-1.1100932992412313
+paired,III,Patch+Trim vs Trim Raw,4,50,,,rotation,-1.5905473642057615
+paired,III,Patch+Trim vs Trim Raw,5,50,,,rotation,-0.10945736103409764
+paired,III,Patch+Trim vs Trim Raw,6,50,,,rotation,-0.8005111852954861
+paired,III,Patch+Trim vs Trim Raw,7,21,,,rotation,-0.9480289346445849

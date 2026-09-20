@@ -1,0 +1,19 @@
+{
+  "kmeans_cluster_ms_median": 151.6918999986956,
+  "kmeans_label_exact_match": true,
+  "kmeans_partition_ARI": 1.0,
+  "vi_field_build_ms_median": 0.1814499992178753,
+  "patch_corrected_model_build_ms": 0.9100999959628098,
+  "patch_kdtree_build_ms": 10.997699995641597,
+  "mu_patch_bytes": 576,
+  "patches_npz_size_b": 26129,
+  "predictor_size_b": 288502,
+  "model_points": 67870,
+  "correctness_max_abs_et_diff": {
+    "EstimatedFull": 1.4210854715202004e-14,
+    "Full": 1.4210854715202004e-14,
+    "Huber": 0.0,
+    "Patch": 1.4210854715202004e-14,
+    "Raw": 2.842170943040401e-14
+  }
+}

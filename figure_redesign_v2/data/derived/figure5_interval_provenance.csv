@@ -1,0 +1,53 @@
+panel,series,center,lower,upper,interval_type,sampling_unit,n,n_blocks
+(a),Raw / VI,161.4079,152.7098,168.4453,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(a),Huber / VI,148.8922,141.1591,155.2701,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(a),Global-Vector / VI,155.9424,143.0848,162.1411,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(a),Patch / VI,116.8153,109.7722,124.6923,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(a),Full / VI,76.857,67.5325,85.4403,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(b),Raw / VI,4.509,3.8578,5.0074,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(b),Huber / VI,3.9465,3.3299,4.4602,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(b),Patch / VI,4.6673,3.8842,5.5924,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(b),Full / VI,2.8809,2.0721,3.6304,descriptive IQR (Q25-Q75),frame on the retained common-support subset,501,6
+(a),Raw / IV,160.4239,155.9652,164.9182,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(a),Huber / IV,132.5624,129.7801,137.7468,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(a),Global-Vector / IV,146.6133,141.9108,152.6249,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(a),Patch / IV,126.26,118.7608,139.2808,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(a),Full / IV,82.898,76.7186,107.2372,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(b),Raw / IV,4.0061,3.5531,4.434,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(b),Huber / IV,3.4013,3.0875,3.7611,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(b),Patch / IV,4.0004,3.5249,4.5469,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(b),Full / IV,2.4644,1.8064,3.0138,descriptive IQR (Q25-Q75),frame on the retained common-support subset,156,4
+(a),Raw / II,66.1492,56.0562,93.7099,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(a),Huber / II,50.8968,37.2035,64.426,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(a),Global-Vector / II,51.1641,42.1074,72.8193,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(a),Patch / II,41.7772,33.943,73.3933,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(a),Full / II,68.8585,57.8113,78.1808,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(b),Raw / II,1.7743,1.3217,2.3739,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(b),Huber / II,1.0489,0.9331,1.1593,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(b),Patch / II,1.2694,0.7676,1.8967,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(b),Full / II,2.2479,1.5649,2.7669,descriptive IQR (Q25-Q75),frame on the retained common-support subset,428,9
+(a),Raw / III,75.0369,54.0478,86.3798,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(a),Huber / III,55.891,41.035,61.145,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(a),Global-Vector / III,62.3514,55.3679,73.6029,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(a),Patch / III,41.2978,24.0064,57.8274,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(a),Full / III,51.2376,42.3524,71.5577,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(b),Raw / III,1.6583,1.238,2.5259,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(b),Huber / III,1.047,0.8969,1.3654,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(b),Patch / III,2.116,1.4227,2.6597,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(b),Full / III,2.6415,2.0567,3.4166,descriptive IQR (Q25-Q75),frame on the retained common-support subset,371,8
+(c),Patch vs Raw / VI,43.5103,41.9315,45.0025,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,501,6
+(c),Patch vs Raw / IV,33.6307,24.5001,36.9739,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,156,4
+(c),Patch vs Raw / II,19.1031,11.89,30.1136,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,428,9
+(c),Patch vs Raw / III,28.9298,21.1429,38.5893,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,371,8
+(c),Patch vs Global-Vector / VI,33.9165,26.6911,43.5545,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,501,6
+(c),Patch vs Global-Vector / IV,19.3098,12.0859,24.2111,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,156,4
+(c),Patch vs Global-Vector / II,0.2404,-8.4934,18.0153,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,428,9
+(c),Patch vs Global-Vector / III,25.0346,15.8089,30.3584,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,371,8
+(c),Patch+Huber vs Huber / VI,45.38,43.1911,47.0643,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,501,6
+(c),Patch+Huber vs Huber / IV,31.8067,22.3961,34.6864,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,156,4
+(c),Patch+Huber vs Huber / II,7.8735,1.6113,12.0851,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,428,9
+(c),Patch+Huber vs Huber / III,19.6627,6.0803,34.1645,whole-block bootstrap 95% percentile CI,block; within-frame baseline-method differences resampled by whole block,371,8
+(d),Patch+Huber - Huber / VI,0.421,-0.1445,0.927,descriptive IQR (Q25-Q75),paired frame (Patch+Huber minus Huber rotation error),501,6
+(d),Patch+Huber - Huber / IV,0.0522,-0.2542,0.6374,descriptive IQR (Q25-Q75),paired frame (Patch+Huber minus Huber rotation error),156,4
+(d),Patch+Huber - Huber / II,0.4977,0.0918,0.9123,descriptive IQR (Q25-Q75),paired frame (Patch+Huber minus Huber rotation error),428,9
+(d),Patch+Huber - Huber / III,0.72,0.3485,1.0988,descriptive IQR (Q25-Q75),paired frame (Patch+Huber minus Huber rotation error),371,8

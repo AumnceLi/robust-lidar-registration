@@ -1,0 +1,11 @@
+{
+  "IV278_Raw": 0,
+  "IV278_Patch": 0,
+  "IV278_Full": 0,
+  "II505_Raw": 346,
+  "II505_Patch": 173,
+  "II505_Full": 94,
+  "_colorbar_cap_mm": 291.18347179751294,
+  "_colorbar_cmin_mm": 0.0,
+  "_note": "points with d_i>cap are saturated; full untruncated values in *_displacement.npz"
+}

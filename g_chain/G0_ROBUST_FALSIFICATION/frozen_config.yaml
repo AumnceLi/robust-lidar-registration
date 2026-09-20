@@ -1,0 +1,66 @@
+# G0 frozen_config.yaml -- ROBUST REGISTRATION FALSIFICATION, sealed BEFORE the first full outcome run.
+# Written 2026-09-10. Inherits ALL phase0/TJ1/TJ2/final-falsification locks read-only; nothing frozen before is changed.
+meta:
+  stage: G0_ROBUST_FALSIFICATION
+  single_question: "Does the structured-mismatch GT-started biased optimum SURVIVE a standard robust registration, or is it a vanilla least-squares-ICP artifact?"
+  rng_seed: 42
+  language_stack: {python: "3.14.7", numpy: "2.5.3", scipy: "1.18.1", pandas: "3.0.5"}
+  frozen_predictor_sha256: "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"  # NOT used to fit anything in G0
+  model_cache_sha256: "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+  patches_sha256: "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+
+controlled_protocol:           # IDENTICAL across every formulation; only per-correspondence weights differ
+  start: "xi=0 = T_GT (GT-started local probe; NOT a pose-initialization benchmark)"
+  coordinate_frame: "TARGET (nominal CAD) frame; source = GT-aligned real cloud"
+  correspondence: "nearest MODEL point, recomputed at every evaluation (cKDTree over fixed 67,870-pt model)"
+  normals: "frozen PCA model normals from model_cache.npz"
+  optimization_tolerance: {p2p: 1.0e-8, p2l: 1.0e-9}
+  max_iterations: 40
+  local_basin_clip: {translation_m: 0.30, rotation_deg: 15.0}   # identical to frozen M2 basin; on-bound flagged
+  p2l_tikhonov: 1.0e-9
+  finite_difference_step: {translation_m: 0.005, rotation_deg: 0.25}  # identical to frozen FD
+  evaluation_frame: "xi = log(T_GT^-1 T*) in target frame"
+
+formulations:                  # ONE primary robust method, pre-registered; no loss-shopping
+  R0_p2p_least_squares: {kind: p2p, weights: all_ones, role: vanilla_baseline,
+                         note: "w=1 special case of the shared weighted solver; reproduces frozen raw__xistar to <=2e-16"}
+  R1_p2l_least_squares: {kind: p2l, weights: all_ones, role: vanilla_baseline,
+                         note: "w=1 special case; reproduces frozen raw__xistar to <=2e-16"}
+  R2_HUBER_WEIGHTED_ICP:
+    role: PRIMARY_ROBUST
+    objective: "J = s^2 mean h_delta(r_i/s); h=0.5u^2 if |u|<=delta else delta|u|-0.5delta^2"
+    residual_metric: {p2p: "|e_i| point distance", p2l: "|n_i . e_i| tangent-normal signed distance"}
+    scale: "IRLS s = max(1.4826 median|r_i - median r_i|, s_floor); s_floor = model median NN spacing = 0.00811 m"
+    delta: 1.345                # standard 95%-Gaussian-efficiency constant, fixed a priori, never outcome-tuned
+    weight: "w_i = 1 if |r_i|/s <= delta else delta*s/|r_i| (recomputed every IRLS iteration)"
+    p2p_step: weighted_Kabsch
+    p2l_step: "weighted 6-DoF Gauss-Newton (A^T W A)"
+  R3_TRIMMED_ICP:
+    role: SECONDARY_SENSITIVITY_ONLY   # cannot be used to overturn/cherry-pick the primary decision
+    keep_fraction: 0.80         # fixed a priori standard trimmed-ICP ratio
+    weight: "binary; smallest 80% residual-metric correspondences each iteration"
+
+trajectories:
+  VI: {role: DEVELOPMENT, n: 501, frames: all, blocks: frozen_6_orientation_blocks}
+  IV: {role: POST_DEVELOPMENT_HELD_OUT, n: 2428, primary_subset: IN_SUPPORT_n156}
+  II: {role: POST_DEVELOPMENT_HELD_OUT, n: 1253, primary_subset: IN_SUPPORT_n428}
+  V:  {role: POST_DEVELOPMENT_HELD_OUT_EXTRAPOLATION, n: 1868, note: "out-of-support; supportive only, never confirmatory"}
+  forbidden_new_trajectories: [Dataset_I, Dataset_III]   # sealed by UNTOUCHED_CONFIRMATORY_LEDGER.md
+  support_rule: {tau: 0.4403305559611483, metric: "d^2=((r-rs)/range_std)^2 + view_angle^2", range_std: 2.064279860893169, k: 16}
+
+per_frame_outputs:
+  - "||grad J_k(T_GT)|| under formulation k's own objective (central difference, NN+weights recomputed)"
+  - "e_t^GT = ||t* - t_GT|| [mm]"
+  - "e_R^GT = angle(R* R_GT^T) [deg]"
+  - "dJ = J_k(T_GT) - J_k(T*) under formulation k's own objective"
+  - "iters, on_bound flag, mean Huber weight / trimmed keep fraction, robust scale"
+self_null:
+  construction: "source = equal-point-count random subset of the NOMINAL model (seed-42 draw in scan order, identical draw policy to frozen r7/tj2_6); same pose/objective/solver"
+  purpose: "robust solver must not manufacture GT displacement in model-self registration"
+uncertainty:
+  primary: "temporal moving-block bootstrap of the median, L=5/10/20, B=2000"
+  paired: "block sign-flip permutation, L=5, B=2000"
+  independence: "consecutive frames are NOT treated as independent n; block structure preserved"
+  effect: "real-vs-self effect size (median + Cohen d + MWU), block CI, engineering magnitude jointly"
+no_preset_mm_threshold: true
+decision_classes: [G0_PASS_STRONG, G0_PASS_ATTENUATED, G0_FAIL_ROBUST_RESOLVES]

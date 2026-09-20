@@ -1,0 +1,151 @@
+{
+  "experiment": "E3_runtime_memory",
+  "generator_script": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_provenance.py",
+  "exact_argv": [
+    "e3_provenance.py"
+  ],
+  "cwd": "D:\\doubao\\final_three_experiments\\03_runtime_memory",
+  "start_utc": "2026-09-12T15:38:34.291522+00:00",
+  "seed": "deterministic (frozen plab seed=42)",
+  "config": {
+    "methods": [
+      "Raw",
+      "Huber",
+      "Patch",
+      "PatchHuber",
+      "Full",
+      "EstimatedFull"
+    ],
+    "estimated_full_definition": "est_warmstart: frozen raw nominal reg -> estimated view -> corrected-model reg warm-started (2 registrations)",
+    "frames": "frozen 20/traj roster = 80 frames (same as E1); NOT the full 1456",
+    "warmup": 1,
+    "repeat": 5,
+    "per_frame_stat": "median over repeats",
+    "deployment_distribution": "across 80 frames median/p25/p75/p95",
+    "stages": [
+      "model_build",
+      "view_query",
+      "kdtree",
+      "registration1",
+      "registration2",
+      "total"
+    ],
+    "thread_fairness": "BLAS threads=1; os.cpu_count pinned 1; cKDTree query workers=1 for EVERY method",
+    "reusable_assets": "Raw/Huber/Patch/PatchHuber cache model+tree once; Full builds query-dependent model+tree per frame; EstFull 2nd model query-dependent",
+    "memory": "fresh subprocess per method; psutil RSS baseline/peak/delta + tracemalloc python peak",
+    "calibration_cost": "frozen MiniBatchKMeans k=24 seed42 n_init20 batch4096 (labels verified == frozen plab) + VI mu_patch hierarchy build",
+    "seed": "deterministic; frozen plab seed=42"
+  },
+  "frozen_config": {
+    "patch_count": 24,
+    "normal_feature_weight": 0.3,
+    "kmeans_seed": 42,
+    "kmeans_n_init": 20,
+    "kmeans_batch_size": 4096,
+    "max_iter": 40,
+    "basin_t_m": 0.3,
+    "basin_r_deg": 15.0,
+    "tol_p2p": 1e-08,
+    "huber_delta": 1.345,
+    "kstar": 16,
+    "predictor_sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  },
+  "machine": {
+    "python": "3.14.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "pandas": "3.0.5",
+    "psutil": "7.2.2",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "os_arch": "AMD64",
+    "cpu_processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "cpu_logical": 24,
+    "cpu_physical": 24,
+    "ram_total_gb": 33.951,
+    "env_threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "QTHREADS": "2"
+    }
+  },
+  "note": "Timed methods reproduce frozen g1 M0/M2/M4/M5 and g2 est_warmstart to <1e-6 mm (correctness gate in e3_calibration.json).",
+  "inputs": {
+    "predictor_frozen": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\rescue\\VI_ONLY_PREDICTOR_FROZEN.npz",
+      "exists": true,
+      "size_b": 288502,
+      "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+    },
+    "model_cache": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\model_cache.npz",
+      "exists": true,
+      "size_b": 1373771,
+      "sha256": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+    },
+    "patches": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\patches.npz",
+      "exists": true,
+      "size_b": 26129,
+      "sha256": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+    },
+    "roster": {
+      "path": "D:\\doubao\\revision_experiments\\final_targeted\\initialization_frames.json",
+      "exists": true,
+      "size_b": 5724,
+      "sha256": "e8ed60d4cd42b7cf0e3d914fdc2242f8fd17d0b16414fcab948b1a0d3482b77e"
+    },
+    "g1_fidelity": {
+      "path": "D:\\doubao\\g_chain\\G1_MITIGATION\\results\\g1_oracle_vi.csv",
+      "exists": true,
+      "size_b": 547514,
+      "sha256": "d7ed869b8282c891b26066d3fc949a4bcd51b36a1298532871c99f7f2bed6a06"
+    },
+    "g2_fidelity": {
+      "path": "D:\\doubao\\g_chain\\G2_ESTIMATED_VIEW\\results\\g2_vi.csv",
+      "exists": true,
+      "size_b": 190861,
+      "sha256": "063926ac32728d8a1ca8b121034ac0f8d38732493639e9603e3dc55c275ec0aa"
+    }
+  },
+  "outputs": {
+    "e3_calibration.json": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_calibration.json",
+      "size_b": 609,
+      "sha256": "cb19cccd478b5d38d1ea5e585068be81464ffd5754ce545bbdc67e59753e5ec8"
+    },
+    "e3_compact_table.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_compact_table.csv",
+      "size_b": 824,
+      "sha256": "ce7331585597924bc6ba4bdbc4eda0411a277e3f0afb8d28030e71ead2619210"
+    },
+    "e3_key_numbers.json": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_key_numbers.json",
+      "size_b": 4698,
+      "sha256": "78c996fa32ed51b73082cbbf433cfcd0706e998be8e710979b15b2490cfe892e"
+    },
+    "e3_memory.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_memory.csv",
+      "size_b": 317,
+      "sha256": "68ddcdd502391e3414b9a7a39415bbf3878ae25ec9187f1d37ea7d1691f0ec2b"
+    },
+    "e3_runtime_framewise.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_runtime_framewise.csv",
+      "size_b": 61475,
+      "sha256": "0cb5bdefeebd200795f78df78fef40599677d1676557f3206c24b8d95de113b1"
+    },
+    "e3_runtime_repeats.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\e3_runtime_repeats.csv",
+      "size_b": 306802,
+      "sha256": "1c727984c2b701cec848c05b27df4ca15ae8706ab00305c2837b328f00a0d0ff"
+    },
+    "runtime_summary.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\03_runtime_memory\\runtime_summary.csv",
+      "size_b": 4531,
+      "sha256": "324568b2e57eb78484fbae96144dad983b7807f8150999a98a37317e1e2b090a"
+    }
+  },
+  "end_utc": "2026-09-12T15:38:34.579745+00:00"
+}

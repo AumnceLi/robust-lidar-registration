@@ -1,0 +1,7 @@
+{
+  "structured_mismatch_phase0/results/patch_persistence.csv": "ce16526f146922fa9d1ebe83a98d79ad9732443b76a00c923ed352e79535b572",
+  "structured_mismatch_phase0/results/patch_definition.csv": "e1aa5ead8317971f1ab23afbf71e333793bb044fc592ff37115fb1c6ad4d9973",
+  "structured_mismatch_phase0/scripts/cache/model_cache.npz": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e",
+  "structured_mismatch_phase0/scripts/cache/patches.npz": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1",
+  "structured_mismatch_phase0/scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+}

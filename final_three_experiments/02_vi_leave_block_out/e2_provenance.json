@@ -1,0 +1,139 @@
+{
+  "experiment": "E2_VI_leave_one_block_out",
+  "generator_script": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out\\e2_provenance.py",
+  "exact_argv": [
+    "e2_provenance.py"
+  ],
+  "cwd": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out",
+  "start_utc": "2026-09-12T15:03:03.659781+00:00",
+  "seed": "42 bootstrap / deterministic registration",
+  "config": {
+    "design": "6-fold leave-one-block-out over frozen VI contiguous blocks",
+    "block_ranges": {
+      "0": "[0,70)",
+      "1": "[70,140)",
+      "2": "[140,219)",
+      "3": "[219,315)",
+      "4": "[315,418)",
+      "5": "[418,501)"
+    },
+    "block_sizes": [
+      70,
+      70,
+      79,
+      96,
+      103,
+      83
+    ],
+    "partition": "FROZEN plab k=24 (normal weight 0.30, MiniBatchKMeans seed42); NOT re-clustered per fold",
+    "field_rule": "per-fold mu_j = g_common.hierarchy_library point-weighted mean over the 5 training blocks only",
+    "leakage_assertions": [
+      "set(train).isdisjoint(test)",
+      "union==all 501",
+      "mu_j == independent train-only point-weighted mean"
+    ],
+    "methods": [
+      "Raw",
+      "Huber",
+      "PatchOOF",
+      "PatchHuberOOF",
+      "PatchFullFit(in-sample comparator)"
+    ],
+    "bootstrap": "block-of-6-blocks + frame moving-block L=5/10/20, B=2000, seed=42; block sign-flip L=5",
+    "decision_rule": "OOF benefit<=0 or <3/6 positive => VI_INTERNAL_GENERALIZATION_WARNING (fixed before result)",
+    "seed": "42 (bootstrap); deterministic registration; frozen plab seed=42",
+    "workers": 20,
+    "blas_threads": 1,
+    "kdtree_query_threads": 1
+  },
+  "frozen_config": {
+    "patch_count": 24,
+    "normal_feature_weight": 0.3,
+    "kmeans_seed": 42,
+    "kmeans_n_init": 20,
+    "kmeans_batch_size": 4096,
+    "max_iter": 40,
+    "basin_t_m": 0.3,
+    "basin_r_deg": 15.0,
+    "tol_p2p": 1e-08,
+    "huber_delta": 1.345,
+    "kstar": 16,
+    "predictor_sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  },
+  "machine": {
+    "python": "3.14.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "pandas": "3.0.5",
+    "psutil": "7.2.2",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "os_arch": "AMD64",
+    "cpu_processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "cpu_logical": 24,
+    "cpu_physical": 24,
+    "ram_total_gb": 33.951,
+    "env_threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "QTHREADS": "2"
+    }
+  },
+  "note": "Each VI scan scored once under the fold that held its block; OOF Patch reproduces frozen g1 M4 to 2.8e-14 mm.",
+  "inputs": {
+    "predictor_frozen": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\rescue\\VI_ONLY_PREDICTOR_FROZEN.npz",
+      "exists": true,
+      "size_b": 288502,
+      "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+    },
+    "model_cache": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\model_cache.npz",
+      "exists": true,
+      "size_b": 1373771,
+      "sha256": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+    },
+    "patches": {
+      "path": "D:\\doubao\\structured_mismatch_phase0\\scripts\\cache\\patches.npz",
+      "exists": true,
+      "size_b": 26129,
+      "sha256": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+    },
+    "g1_vi_fidelity": {
+      "path": "D:\\doubao\\g_chain\\G1_MITIGATION\\results\\g1_oracle_vi.csv",
+      "exists": true,
+      "size_b": 547514,
+      "sha256": "d7ed869b8282c891b26066d3fc949a4bcd51b36a1298532871c99f7f2bed6a06"
+    }
+  },
+  "outputs": {
+    "e2_lobo_fold_provenance.json": {
+      "path": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out\\e2_lobo_fold_provenance.json",
+      "size_b": 47001,
+      "sha256": "d2017df13d620b5d5eb9da5d226eafc59000f0f49ef17b321d6557d773373427"
+    },
+    "e2_vi_lobo_fold_table.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out\\e2_vi_lobo_fold_table.csv",
+      "size_b": 1111,
+      "sha256": "091c46ba2fd07791a286cabfdb3f9070422f91eac277dcf497d25cdcd5e6502f"
+    },
+    "e2_vi_lobo_framewise.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out\\e2_vi_lobo_framewise.csv",
+      "size_b": 144944,
+      "sha256": "ef42d0c95d0ec8bf42007b9df27e4101b075e8d39b31fdc045c5b2d46c2be2f5"
+    },
+    "e2_vi_lobo_oof_framewise.csv": {
+      "path": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out\\e2_vi_lobo_oof_framewise.csv",
+      "size_b": 165313,
+      "sha256": "7c934cff5eae57dd20aefa7c922c376f512223972217396d036968ac9be22454"
+    },
+    "e2_vi_lobo_summary.json": {
+      "path": "D:\\doubao\\final_three_experiments\\02_vi_leave_block_out\\e2_vi_lobo_summary.json",
+      "size_b": 1533,
+      "sha256": "8ec4badcd025d2dc1d570a5478f9c3ff325607ce07b51225caf158a9e91956f7"
+    }
+  },
+  "end_utc": "2026-09-12T15:03:03.947344+00:00"
+}

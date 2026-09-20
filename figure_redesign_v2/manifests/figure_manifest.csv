@@ -1,0 +1,10 @@
+figure_id,location,size_mm,scripts,data_sources,description
+figure1,main,180x95,draw_figure1.py,"model_cache.npz, patches.npz",Mechanism flow diagram
+figure2,main,180x108,"draw_figure2.py, compute_figure2_data.py","model_cache.npz, patches.npz, VI scans",Residual structure heatmap + curves
+figure3,main,180x110,figure3.py,pose_active_direct_framewise.csv,"Local mechanism: residual log-x, direction ECDF"
+figure4,main,180x100,figure4.py,"dose_response.csv, phase_samples_ls_translation.csv",Controlled mismatch: Table3 cases + phase map
+figure5,main,180x112,make_figure5.py,"replay79_arms.csv, dbs_vector_framewise.csv",Effect: marginal error + paired forest + rotation cost
+figure6,main,180x125,"plot_figure6.py, reproduce_figure6_gate.py","IV278/II505 scans, replay79_arms.csv, g_common.py",Real EPOS-LiDAR: 2D ortho dual-color overlay
+figureS1,supplementary,180x80,figureS1.py,pose_active_direct_framewise.csv,Step prediction + condition number + switch rate
+figureS2,supplementary,180x100,make_figureS2.py,e1_coarse_init_framewise.csv,Initialization sensitivity
+figureS3,supplementary,180x100,make_figureS3.py,replay79_arms.csv (G2 est_warmstart),Estimated-Full gap + paired distribution

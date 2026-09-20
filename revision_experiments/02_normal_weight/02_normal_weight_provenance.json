@@ -1,0 +1,78 @@
+{
+ "experiment": "02_normal_weight",
+ "generated_utc": "2026-09-12T21:24:28",
+ "host": "Aumnce",
+ "python": "3.14.7",
+ "numpy": "2.5.3",
+ "scipy": "1.18.1",
+ "sklearn": "1.9.0",
+ "pandas": "3.0.5",
+ "git_commit": "NOT_A_GIT_REPO",
+ "exact_command": "python revision_experiments/_lib/p1_run.py",
+ "config": {
+  "normal_weight": [
+   [
+    "w000",
+    24,
+    0.0,
+    42
+   ],
+   [
+    "w015",
+    24,
+    0.15,
+    42
+   ],
+   [
+    "w030",
+    24,
+    0.3,
+    42
+   ],
+   [
+    "w060",
+    24,
+    0.6,
+    42
+   ],
+   [
+    "w100",
+    24,
+    1.0,
+    42
+   ]
+  ],
+  "other_params": "frozen main config",
+  "baseline": "Raw arm reused from replay79_arms.csv"
+ },
+ "random_seed": 42,
+ "input_assets": {
+  "frozen_predictor_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz",
+   "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  },
+  "model_cache_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/model_cache.npz",
+   "sha256": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+  },
+  "patches_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/patches.npz",
+   "sha256": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+  },
+  "replay79_arms_csv": {
+   "path": "D:/doubao/FOLLOWUP_6_9/scripts/replay79_arms.csv",
+   "sha256": "9098162bfa9c9df0ea12515ccb53ab588fdb32831386392a731fd033c9a4e148"
+  }
+ },
+ "note": "Stability analysis only; main config 24/0.30/42 not re-selected.",
+ "outputs": {
+  "framewise": {
+   "path": "D:/doubao/revision_experiments/02_normal_weight/02_normal_weight_framewise.csv",
+   "sha256": "83babd4766af81c9666121a55cd3342db0ead6a40b94cb882a13e23c172d72e8"
+  },
+  "summary": {
+   "path": "D:/doubao/revision_experiments/02_normal_weight/02_normal_weight_summary.csv",
+   "sha256": "0e56ddb76fd8bf56be7389888f2a71ec98461dc575b435da50a6025628172de5"
+  }
+ }
+}

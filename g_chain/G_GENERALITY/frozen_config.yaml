@@ -1,0 +1,31 @@
+# G_GENERALITY frozen configuration (locked before the full run; mirrors G0 solver config)
+solver:
+  source: common/g_common.py (frozen, same engine as G0/G1/G2)
+  formulations: [p2p_ls, p2p_huber, p2p_trim, p2l_ls]
+  huber_delta: 1.345
+  mad_k: 1.4826
+  trim_keep: 0.80
+  scale_floor: per-geometry nominal-model median NN spacing  # ~0.013 m sampling
+  basin_t_m: 0.30
+  basin_r_deg: 15.0
+  max_iter: 40
+  tol_p2p: 1.0e-8
+  tol_p2l: 1.0e-9
+  fd_t_m: 0.005
+  fd_r_deg: 0.25
+sampling:
+  surface_spacing_m: 0.013
+  sensor_noise_mm: 2.0
+  view_half_angle_deg: 75
+  vantages_per_geometry: 3
+  replicates_per_cell: 20
+  seeds: {structured_base: 10000, noise_control_base: 40000}
+magnitude_sweeps:
+  D1_appendage_disp_mm: [0, 2, 5, 10, 25, 50, 100]
+  D2_unmodeled_component_frac: [0, 0.25, 0.5, 0.75, 0.9, 1.0]
+  D3_local_surface_offset_mm: [0, 2, 5, 10, 25, 50, 100]
+  D4_one_sided_scale_frac: [0, 0.005, 0.01, 0.025, 0.05, 0.10]
+  D5_assembly_tilt_deg: [0, 0.1, 0.25, 0.5, 1, 2]
+  control_isotropic_noise_mm: [2, 5, 10, 25, 50, 100]
+bootstrap: {B: 2000, ci: [2.5, 97.5], unit: replicate}
+no_tuning: true

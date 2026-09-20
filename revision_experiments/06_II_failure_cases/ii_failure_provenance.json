@@ -1,0 +1,55 @@
+{
+ "experiment": "P4-II-failure-diagnostic",
+ "generated_utc": "2026-09-12T21:38:01",
+ "host": "Aumnce",
+ "python": "3.14.7",
+ "numpy": "2.5.3",
+ "scipy": "1.18.1",
+ "sklearn": "1.9.0",
+ "pandas": "3.0.5",
+ "git_commit": "NOT_A_GIT_REPO",
+ "exact_command": "python revision_experiments/_lib/p4_run.py",
+ "config": {
+  "rule": "best10/median+-5%/worst10 by full_minus_patch_mm; one rep=closest-to-bin-median",
+  "reps_per_traj": 3,
+  "descriptors": "existing replay79_support, no new model"
+ },
+ "random_seed": 42,
+ "input_assets": {
+  "frozen_predictor_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz",
+   "sha256": "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  },
+  "model_cache_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/model_cache.npz",
+   "sha256": "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"
+  },
+  "patches_npz": {
+   "path": "D:/doubao/structured_mismatch_phase0/scripts/cache/patches.npz",
+   "sha256": "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"
+  },
+  "replay79_arms_csv": {
+   "path": "D:/doubao/FOLLOWUP_6_9/scripts/replay79_arms.csv",
+   "sha256": "9098162bfa9c9df0ea12515ccb53ab588fdb32831386392a731fd033c9a4e148"
+  }
+ },
+ "note": "Diagnostic only; no frame hand-picked; conclusion limited to transfer/view conditioning.",
+ "outputs": {
+  "bin_table": {
+   "path": "D:/doubao/revision_experiments/06_II_failure_cases/ii_failure_bin_diagnostics.csv",
+   "sha256": "121f37482b2870effc8d6edfa67fcd6bdc91ea2f8533b933a2ccf9ca79face76"
+  },
+  "representatives": {
+   "path": "D:/doubao/revision_experiments/06_II_failure_cases/ii_failure_representative_frames.csv",
+   "sha256": "72900809a38bfae7a9d0061e24bc58b564c606fb3e62571c7251e6380b5b2c70"
+  },
+  "fig_representatives": {
+   "path": "D:/doubao/revision_experiments/06_II_failure_cases/fig_II_vs_IV_representative_diagnostic.png",
+   "sha256": "d2d4fb6132f96176527f717c4ca3a8ee238131f113028147958e25df69ffb3ad"
+  },
+  "fig_bins": {
+   "path": "D:/doubao/revision_experiments/06_II_failure_cases/fig_II_vs_IV_bin_diagnostics.png",
+   "sha256": "470b4343964b901457f8685faa443785e6c6652c06094072088fe32ec6dfafe2"
+  }
+ }
+}

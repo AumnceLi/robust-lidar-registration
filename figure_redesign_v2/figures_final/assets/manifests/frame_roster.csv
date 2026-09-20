@@ -1,0 +1,5 @@
+trajectory,common_support_frames,raw_pool_frames,coverage_pct,n_blocks,role
+VI,501,501,100.0,6,Development/calibration
+IV,156,2428,6.4,4,External transfer
+II,428,1253,34.2,9,Difficult external transfer
+III,371,1302,28.5,8,Secondary

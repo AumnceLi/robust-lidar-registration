@@ -1,0 +1,134 @@
+{
+  "i": {
+    "tag": "i",
+    "zip_bytes": 194066093,
+    "n_entries": 4967,
+    "ext": {
+      "": 1,
+      ".3d": 2483,
+      ".pose": 2483
+    },
+    "methods": {
+      "0": 1,
+      "8": 4966
+    },
+    "n_pose": 2483,
+    "n_3d": 2483,
+    "expect_n": 2483,
+    "pose_compressed_bytes": 158510,
+    "p3d_compressed_bytes": 192943995,
+    "pose_ubytes": 218682,
+    "first_entries": [
+      "epos_dataset_i/",
+      "epos_dataset_i/0000.3d",
+      "epos_dataset_i/0000.pose",
+      "epos_dataset_i/0001.3d"
+    ],
+    "pose_first": {
+      "name": "epos_dataset_i/0000.pose",
+      "method": 8,
+      "flag": 8,
+      "crc": 3669814703,
+      "csize": 65,
+      "usize": 89,
+      "lho": 50398
+    },
+    "pose_last": {
+      "name": "epos_dataset_i/2482.pose",
+      "method": 8,
+      "flag": 8,
+      "crc": 2645729238,
+      "csize": 64,
+      "usize": 88,
+      "lho": 193603982
+    }
+  },
+  "ii": {
+    "tag": "ii",
+    "zip_bytes": 89932451,
+    "n_entries": 2507,
+    "ext": {
+      "": 1,
+      ".3d": 1253,
+      ".pose": 1253
+    },
+    "methods": {
+      "0": 1,
+      "8": 2506
+    },
+    "n_pose": 1253,
+    "n_3d": 1253,
+    "expect_n": 1253,
+    "pose_compressed_bytes": 79926,
+    "p3d_compressed_bytes": 89361163,
+    "pose_ubytes": 110233,
+    "first_entries": [
+      "epos_dataset_ii/",
+      "epos_dataset_ii/0000.3d",
+      "epos_dataset_ii/0000.pose",
+      "epos_dataset_ii/0001.3d"
+    ],
+    "pose_first": {
+      "name": "epos_dataset_ii/0000.pose",
+      "method": 8,
+      "flag": 8,
+      "crc": 427874925,
+      "csize": 65,
+      "usize": 89,
+      "lho": 69734
+    },
+    "pose_last": {
+      "name": "epos_dataset_ii/1252.pose",
+      "method": 8,
+      "flag": 8,
+      "crc": 3525880368,
+      "csize": 63,
+      "usize": 88,
+      "lho": 89696613
+    }
+  },
+  "iii": {
+    "tag": "iii",
+    "zip_bytes": 94194038,
+    "n_entries": 2605,
+    "ext": {
+      "": 1,
+      ".3d": 1302,
+      ".pose": 1302
+    },
+    "methods": {
+      "0": 1,
+      "8": 2604
+    },
+    "n_pose": 1302,
+    "n_3d": 1302,
+    "expect_n": 1302,
+    "pose_compressed_bytes": 82212,
+    "p3d_compressed_bytes": 93596046,
+    "pose_ubytes": 113723,
+    "first_entries": [
+      "epos_dataset_iii/",
+      "epos_dataset_iii/0000.3d",
+      "epos_dataset_iii/0000.pose",
+      "epos_dataset_iii/0001.3d"
+    ],
+    "pose_first": {
+      "name": "epos_dataset_iii/0000.pose",
+      "method": 8,
+      "flag": 8,
+      "crc": 1345703944,
+      "csize": 64,
+      "usize": 88,
+      "lho": 63590
+    },
+    "pose_last": {
+      "name": "epos_dataset_iii/1301.pose",
+      "method": 8,
+      "flag": 8,
+      "crc": 1303504957,
+      "csize": 65,
+      "usize": 88,
+      "lho": 93946380
+    }
+  }
+}

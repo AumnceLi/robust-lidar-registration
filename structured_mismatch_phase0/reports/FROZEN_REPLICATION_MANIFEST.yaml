@@ -1,0 +1,161 @@
+# FROZEN_REPLICATION_MANIFEST.yaml
+# Structured Spacecraft LiDAR Model Mismatch — IV/V FROZEN NON-CIRCULAR REPLICATION
+# Locked: 2026-09-09 (Asia/Shanghai). AFTER this file is written, NOTHING below may be
+# changed on IV/V. Hyperparameters are selectable ONLY inside VI and then frozen here.
+# Rule: TRAIN/DEFINE ON VI ONLY -> TEST ON IV/V ONLY. IV/V current-frame residual never
+# enters the primary predictor (else CIRCULAR_EVIDENCE_INVALID).
+
+meta:
+  canonical_status_source: reports/FINAL_GATE.md   # GO_STANDARD_PAPER_CORE
+  current_stage: IV/V frozen non-circular replication
+  rng_seed: 42
+  rng_library: numpy.default_rng(42)
+  language_stack: {python: "3.14.7", numpy: "2.5.3", scipy: "1.18.1", sklearn: "1.9.0", pandas: "3.0.5"}
+
+# ---------------------------------------------------------------- data / coordinates
+data_convention:
+  lidar_files: ".3d = ASCII 'x y z' meters, LIDAR frame, ~10k points/scan"
+  pose_files: ".pose = line1 timestamp(abs s); line2 pos target-in-lidar [m]; line3 quaternion [qs qx qy qz] scalar-first, target->lidar"
+  gt_transform: "P_target = R^T (P_lidar - t),  R=quat->rotmat(target->lidar)"
+  target_model: "../external_dataset_scout/intermediate/samples/epos_target_model.3d  # 67870 pts, target frame"
+  trajectories:
+    VI: {n_scans: 501, local_dir: "scripts/vi_data/epos_dataset_vi", role: TRAIN_DEFINE_ONLY}
+    IV: {n_scans: 2428, remote_zip: "epos_dataset_iv.zip", bytes: 189777178, role: TEST_ONLY}
+    V:  {n_scans: 1868, remote_zip: "epos_dataset_v.zip",  bytes: 152090372, role: TEST_ONLY}
+  download:
+    share: "https://syncandshare.desy.de/public.php/webdav/"
+    token_user: "m5qqjcEjXFAAAtR"   # public share, empty password (curl.exe -u token:)
+    total_IV_V_bytes: 341867550     # 326 MiB < 400 MB cap
+    forbidden: ["synthetic_*", "epos_dataset_i/ii/iii", "SpaceSense", "all 7.4GB"]
+
+# ---------------------------------------------------------------- frozen model artifacts
+frozen_artifacts_sha256:
+  target_model_3d:        "4613f00b91bfedd22c4aab19f974e34fb8279b21634c433b04668e48de4402e4"
+  model_cache_npz:        "7e53cd544227ba1e8f5c7326a1c23ca5bae6273af275c5a9488eb2a9e42dad6e"   # xyz, PCA normals(k=16), nn spacing 0.008106m
+  patches_npz:            "6b4ffd09c6895abfecd1ed1dde1765eeb2d43f5f8e74e0c27dacbf7b6e5f9fe1"   # 24 frozen patch labels
+  patch_matrix_npz:       "f5c55a63d5aadf52e04d095ae59fba2cc54b03556903bed30b0e187434c98285"   # M(501,24), profile, sps
+  model_point_resid_npy:  "3bd423758d1d81ceee1c292d41e19be9a60e37c8a081fc3f266364c019a348d0"
+frozen_scripts_sha256:
+  s0_common_py:  "0acf82fa3cbefc5610f96e9904442f5d8c18b7bebb36f1aa3e59f11386a02c9e"
+  s1_residuals:  "bf9cda260ca3c77517d1da493aa01f75e39e42954fccbfb742da257ea010c670"
+  s3_patches:    "69a52b4f8558b378d30aef78fb855af887ae89eafc0a939334930bbbc2fa2b15"
+  m_common_py:   "a0c7ad488a3164a921ab6a77b380a4e0cd768777425d16c82de28fc5e9f237b8"
+
+patches:
+  n_patches: 24
+  method: "MiniBatchKMeans(n_clusters=24, random_state=42) on stacked [xyz, 0.3*normal] of MODEL points"
+  re_cluster_on_IV_V: false        # IV/V reuse VI's exact 24 patch labels via NN to model
+  model_nn_policy: "scipy cKDTree, k=1, workers=-1, recomputed at every objective evaluation"
+
+residual_definitions:
+  signed_residual: "s_i = (P_aligned_i - m_nn(i)) . n_model(nn(i))   [meters, target frame]"
+  mismatch_vector: "v_i = P_aligned_i - m_nn(i)                       [3D, target frame]"
+  normals: "frozen model PCA normals, k=16"
+  scan_patch_label: "patch of a scan point = model-patch label of its NN model point"
+
+# ---------------------------------------------------------------- nuisance (N4 demoted)
+nuisance:
+  primary_controls: [RAW, N1_range_offset, N2_shared_SE3, N3_isotropic_scale]
+  N1_range_offset_br_mm: 58.33183260641035
+  N2_shared_SE3: {t_mm: [45.66629212343002, -0.9635487866922601, -5.76328782085703], |t|_mm: 46.04, rot_deg: 2.413620127899284, scope: one-shared-across-all-501, never_per_scan: true}
+  N3_isotropic_scale: {s: 0.9655788069097739, scale_pct: -3.4421193090226065}
+  N4_combined:
+    role: OVER_PARAMETERIZED_STRESS_TEST_ONLY   # NOT a primary calibration result
+    params: {br_mm: 330.57812958257267, scale: 1.0634920840569897, t_mm: [-174.83698257945096, 1.9647835643592884, -4.387473927862717], rot_deg: 2.575833724681085, dof: 8, gn_steps: 12}
+    note: "mutually-compensating non-physical params; patch_profile_std 21.44->51.60mm (2.4x). Forbidden phrase: 'all calibration effects removed'."
+
+# ---------------------------------------------------------------- objectives (no design-for-result)
+objectives:
+  J1_point_to_point: "J_p2p = mean_i || T p_i - m_nn(Tp_i) ||^2 ; NN recomputed every evaluation"
+  J2_point_to_plane: "J_p2l = mean_i [ n_nn^T (T p_i - m_nn) ]^2 ; frozen PCA normals"
+  forbidden_phase0: [robust_loss, trimmed_ICP, tukey, huber, outlier_rejection]
+local_coordinates:
+  xi: "[tx,ty,tz (m), rx,ry,rz (rad)] in TARGET frame; T(xi) P = rodrigues(r) P + t"
+finite_difference:
+  translation_step_m: 0.005
+  rotation_step_deg: 0.25
+  hessian: "symmetric central difference"
+  stability_verified: "gradient-direction cosine 0.984-1.0000 across 2.5/5/10mm steps"
+perturbation_grid: {translation_cm: [1,2,5,"+/-"], rotation_deg: [0.5,1,2,"+/-"], include_zero: true}
+local_optimization:
+  start: "AT GT (xi=0); local mechanism probe, NOT autonomous initialization"
+  basin: {translation_m: 0.30, rotation_deg: 15.0}
+  solvers: ["ICP (Kabsch / linearized p2l Gauss-Newton), basin-clipped", "L-BFGS-B bounded cross-check"]
+  clip_rule: "accumulated R,t clipped to basin the first step that exits; on_bound flag returned"
+  forbidden: "do NOT modify optimizer on IV/V to improve results"
+
+# ---------------------------------------------------------------- VI-only non-circular predictor (locked design; VI-internal hyperparams recorded after NC0)
+noncircular_predictor:
+  principle: "VI template + test GT viewing geometry + nominal CAD ONLY; test scan residual forbidden"
+  view_descriptor_z: [range_m, view_direction_unit_in_target_frame]
+  view_direction: "sensor origin in target frame = -R^T t, normalized; range = its norm"
+  template:
+    level: "per frozen patch j: mu_j(z) = kernel-weighted mean mismatch 3-vector over VI training scans that see j"
+    estimator: [nearest_neighbor, gaussian_kernel_local_average]   # no neural network
+    hyperparams_selected: "inside VI ONLY via Protocol A; then frozen (values appended in VI_ONLY_PREDICTOR_FROZEN.json)"
+  embargo_protocol_A: "hold out t AND scans [t-10,t+10] when building template"
+  blockout_protocol_B: "hold out entire GT-attitude orientation block"
+  predicted_cloud: "Qhat_i = m_nn(i) + mu_{j(i)}(z_test)   # nominal matched point + VI template vector"
+  predicted_gradient: "ghat = grad_xi J(Qhat) at xi=0 (same FD)"
+  predicted_step: "dxi_hat = - pinv(H_nom) ghat ; H_nom = Hessian of objective on NOMINAL support cloud m_nn(i) (no hold-out residual)"
+  pseudo_inverse: "numpy.linalg.pinv (rcond default) for nominal H"
+
+# ---------------------------------------------------------------- gates / thresholds (frozen before seeing IV/V)
+gates:
+  NC0_VI_internal_primary:   # must PASS before any IV/V download
+    endpoint: translation_direction
+    median_cosine_min: 0.70
+    bootstrap_ci95_lower_gt: 0
+    frac_positive_min: 0.75
+    permutation_p_max: 0.01
+    secondary: "Spearman(||dt_hat||,||dt*||) supporting only"
+    on_fail: STOP_CIRCULAR_MECHANISM
+  external_P1_stationarity: {per_trajectory: [IV, V], require: "||g_real|| >> self/null; stable mean gradient direction", reuse_VI_protocol_exactly: true}
+  external_P2_localopt:      {per_trajectory: [IV, V], basin: "0.30m/15deg frozen", report: [raw,N1,N2,N3] x [p2p,p2l]}
+  external_P3_direction:     # most important
+    per_trajectory: [IV, V]
+    median_cosine_min: 0.60
+    ci95_lower_gt: 0
+    frac_positive_min: 0.70
+    permutation_p_max: 0.01
+    permutation: "shuffle VI template <-> test geometry"
+  classification:
+    both_IV_V_pass: STRONG_REPLICATION
+    one_pass_one_weak: PARTIAL_REPLICATION
+    both_fail: STOP_SINGLE_TRAJECTORY_OR_NONTRANSFERABLE
+  TJ1_top_journal: [TJ1_A_NC0, TJ1_B_IV_stationarity, TJ1_C_V_stationarity, TJ1_D_IV_direction, TJ1_E_V_direction, TJ1_F_patch_influence_directional_replication]
+  level4_magnitude: {per_trajectory_spearman_min: 0.4, note: "single VI-only scalar alpha_VI, never fit on IV/V"}
+
+support_domain:
+  feature_space: "z=(range, orientation)"
+  tau_support: "95th percentile of VI leave-block-out nearest-training distance; computed in VI, frozen"
+  rule: "IN_SUPPORT iff d(z_test, VI) <= tau_support; primary confirmatory uses IN_SUPPORT only; OUT_OF_SUPPORT = extrapolation appendix"
+  change_threshold_after_lock: false
+
+statistics:
+  block_bootstrap: {required: true, block_length: "derived from VI temporal autocorrelation before IV/V", forbidden: pointwise_only}
+  permutation_B: 2000
+  bootstrap_B: 2000
+  report_each_trajectory_first: [IV, V]
+  pooled_meta: "only AFTER separate IV and V results"
+  symmetry: "use existing symmetry-aware error convention only; no symmetry contribution/analysis"
+
+forbidden_methods: [new_ICP, robust_loss, new_NDT, neural_network, learned_correction, bad_patch_filtering, bias_correction, tracking, confidence_estimator]
+ordering: "VI non-circular -> (NC0 pass) -> download IV/V -> P1/P2 -> P3 -> secondary P4/quadratic; never tune V from IV outcome"
+
+frozen_predictor_record:   # appended AFTER VI NC0 PASS, BEFORE any IV/V download
+  file: scripts/cache/rescue/VI_ONLY_PREDICTOR_FROZEN.npz
+  sha256: "8abcc82d3b97a778ae1c00ff15d15aed089bb14ddf9465d9f935ece7fe3bfffe"
+  k_nearest_views: 16            # chosen inside VI (grid 8/16/32/64 -> 0.937/0.940/0.931/0.898)
+  range_std_m: 2.0643
+  tau_support: 0.4403            # 95th pct VI leave-block-out nearest-training distance
+  alpha_VI_raw_p2p: 0.0200       # single through-origin magnitude scalar, VI-only
+  nc0_primary: {protocol: A_embargo10, cond_obj: "raw|p2p", median_cos: 0.940,
+                block_ci95: [0.929, 0.948], frac_positive: 1.00, perm_p: 0.0005,
+                protocol_B_median_cos: 0.940, verdict: PASS}
+  locked_before_IVV: true
+
+deliverables:
+  reports: [STATUS_LEDGER_FINAL.md, FROZEN_REPLICATION_MANIFEST.yaml, VI_NONCIRCULAR_VALIDATION.md, IV_REPLICATION.md, V_REPLICATION.md, EXTERNAL_NONCIRCULAR_PREDICTION.md, PATCH_TRANSFER.md, QUADRATIC_TRANSFER.md, TOP_JOURNAL_GATE_FINAL.md]
+  csv: [vi_noncircular.csv, iv_prediction.csv, v_prediction.csv, patch_transfer.csv, trajectory_summary.csv]
+  frozen_predictor: "VI_ONLY_PREDICTOR_FROZEN.npz/.json + SHA256 (written before IV/V download)"
